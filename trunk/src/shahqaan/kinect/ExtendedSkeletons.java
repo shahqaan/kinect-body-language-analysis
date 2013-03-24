@@ -38,7 +38,10 @@ public class ExtendedSkeletons extends Skeletons {
     public static String MESSAGE_3 = null;
     public static String MESSAGE_4 = null;
     public static String MESSAGE_5 = null;
-    
+
+    /**
+     * TODO remove method
+     */
     private void classify() {
         // differentiating between anger and happiness
         if (ExtendedSkeletons.bodyState[1] == 2) { // maybe angry

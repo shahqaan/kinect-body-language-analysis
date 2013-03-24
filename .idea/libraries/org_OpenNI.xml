@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.OpenNI">
+    <CLASSES>
+      <root url="jar://C:/Program Files/OpenNI/Bin64/org.OpenNI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

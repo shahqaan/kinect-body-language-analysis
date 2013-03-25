@@ -40,7 +40,7 @@ public class ExtendedSkeletons extends Skeletons {
     public static String MESSAGE_5 = null;
 
     /**
-     * TODO remove method
+     * TODO simulate Kinect skeleton generation
      */
     private void classify() {
         // differentiating between anger and happiness

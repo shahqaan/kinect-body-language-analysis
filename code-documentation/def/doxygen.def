@@ -1,0 +1,5432 @@
+AutoGen Definitions dummy;
+interface = {
+  cp-id     = 'interfaceshahqaan_1_1kinect_1_1_abstract_drawable';
+  cp-name   = 'shahqaan::kinect::AbstractDrawable';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_drawable_skeleton';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'interfaceshahqaan_1_1kinect_1_1_abstract_drawable_1a6809b1a6f6ef8ff3fd317887b85f769a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'drawSkeleton';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Graphics2D
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'g2d';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractDrawable.java';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param g2d
+@param skel
+@param skeletons
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_extended_skeletons_8java_1a35840072869d31cde236b47036307338';
+        sec-mem-ref-line = '85';
+        sec-mem-ref-name = 'shahqaan.kinect.ExtendedSkeletons::draw';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'interfaceshahqaan_1_1kinect_1_1_abstract_drawable_1a22b071d4d24f48e8987f02ba68c64b97';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'drawLine';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Graphics2D
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'g2d';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SkeletonJoint
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'j1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SkeletonJoint
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'j2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractDrawable.java';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param g2d
+@param skel
+@param j1
+@param j2
+@param skeletons
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractDrawable.java';
+  cp-fileline  = '16';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+@author Shahqaan Qasim
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'shahqaan.kinect.DrawableSkeleton';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_drawable_skeleton';
+        };
+        node-child = {
+          child-id = '0';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 0;
+        node-label = 'shahqaan.kinect.AbstractDrawable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_drawable';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* interface */
+interface = {
+  cp-id     = 'interfaceshahqaan_1_1kinect_1_1_abstract_loggable';
+  cp-name   = 'shahqaan::kinect::AbstractLoggable';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_loggable_skeleton';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'interfaceshahqaan_1_1kinect_1_1_abstract_loggable_1a1c47cd63b2f9aa5cd2e509ad5325e898';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'start';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractLoggable.java';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'interfaceshahqaan_1_1kinect_1_1_abstract_loggable_1a01716ee3ca6636cf910cb87886d9f401';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'log';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractLoggable.java';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param skeletons
+@param skel
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_extended_skeletons_8java_1ad0ab4e04c60df124ea7cb5b0b5ead7af';
+        sec-mem-ref-line = '163';
+        sec-mem-ref-name = 'shahqaan.kinect.ExtendedSkeletons::updateJoint';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'interfaceshahqaan_1_1kinect_1_1_abstract_loggable_1ab514a78542ccd7ec020cb3111658944b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'stop';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractLoggable.java';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractLoggable.java';
+  cp-fileline  = '15';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+@author Shahqaan Qasim
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 4;
+        node-label = 'shahqaan.kinect.LoggableSkeleton';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_loggable_skeleton';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'shahqaan.kinect.AbstractLoggable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_loggable';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* interface */
+interface = {
+  cp-id     = 'interfaceshahqaan_1_1kinect_1_1_abstract_trackable';
+  cp-name   = 'shahqaan::kinect::AbstractTrackable';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'interfaceshahqaan_1_1kinect_1_1_abstract_trackable_1a8120a6bdccde36878a0b30220436162d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'track';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractTrackable.java';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param skeletons
+@param skel 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_extended_skeletons_8java_1ad0ab4e04c60df124ea7cb5b0b5ead7af';
+        sec-mem-ref-line = '163';
+        sec-mem-ref-name = 'shahqaan.kinect.ExtendedSkeletons::updateJoint';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractTrackable.java';
+  cp-fileline  = '15';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+@author Shahqaan Qasim
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 6;
+        node-label = 'shahqaan.kinect.AbstractTrackable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_trackable';
+        };
+      }; /* node */
+      node = {
+        node-id    = 7;
+        node-label = 'shahqaan.kinect.TrackableSkeleton';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_trackable_skeleton';
+        };
+        node-child = {
+          child-id = '6';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* interface */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_body_part';
+  cp-name   = 'shahqaan::kinect::BodyPart';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1aeec77d4f1efeb49568804cf0b0997141';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'BodyPart';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'forward';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'upward';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'openness';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'straight';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param forward
+@param upward
+@param openness
+@param straight
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1a919fc64f3704e2b9acf784e8e1096620';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'BodyPart';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1a7869d2dcba9ab6d89768b352556315fc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getForward';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1a1e48d97e128b6a71ce5da7c1d563a2db';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setForward';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'forward';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1aa5e14cfa7b48f6f3abe25046ed1525a1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getUpward';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '40';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1ae2bf1ec7d69ecd91cb5b6c67f3d0d057';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setUpward';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'upward';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1ae336757f83678747b51145cd6dd9f077';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getOpenness';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1ae1c8fc06d0553037b0ca408bca856f07';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setOpenness';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'openness';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1aba6c188f65c8ebb9291fba3ac2cdee6a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getStraight';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1adfc2c8ff3d5ead766a065c94489dd47b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setStraight';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'straight';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_1a1b3700c7d7a1ffda4cb694fbd57479ec';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPartParameter
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'forward';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+      sec-mem-desc-line = '8';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+  cp-fileline  = '7';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 11;
+        node-label = 'shahqaan.kinect.BodyPartParameter';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_body_part_parameter';
+        };
+      }; /* node */
+      node = {
+        node-id    = 10;
+        node-label = 'shahqaan.kinect.BodyPart';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_body_part';
+        };
+        node-child = {
+          child-id = '11';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+straight
+upward
+openness
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_body_part_parameter';
+  cp-name   = 'shahqaan::kinect::BodyPartParameter';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1a7578f09e43601fef84157d7533440dea';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'BodyPartParameter';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'min';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'max';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param min
+ min value of the parameter
+@param max
+ max value of the parameter
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1a03fc67d88aa453d88a9b4e58ad992644';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'BodyPartParameter';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1adced82d26dc9badf1f7adfb2dca551d1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMax';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1a799f857122feef27b0eee5a1ccfb37d7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setMax';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'max';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1a7c5acb647daf2ea41263fd4f539a9328';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMin';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '43';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1ab3945695a7e5e2d3023187e9a5419ce0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setMin';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'min';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1aeee62a255cfd505ead1398ec0a5ea2f8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getSpan';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '57';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1a6b450e293e2b2a291a74458dcee9d703';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setSpan';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'span';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '61';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1a92c74352525b191eec184eee4e1b8d65';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'min';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '8';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1ae4eb57b80c946a7e981fc044b5cbe7f8';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'span';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '9';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1aff625ccbe0a243427e0271e978709955';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+boolean
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'minSet';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= false
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '11';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_body_part_parameter_1a950aadf3b39f8a19401152be76cc463b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+boolean
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'maxSet';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= false
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+  cp-fileline  = '7';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_calibration_complete_observer';
+  cp-name   = 'shahqaan::kinect::Skeletons::CalibrationCompleteObserver';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_i_observer';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_calibration_complete_observer_1a58fff041f54f772b9ee20a39bcca079a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'update';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+IObservable< CalibrationProgressEventArgs >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'observable';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+CalibrationProgressEventArgs
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'args';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '276';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+  cp-fileline  = '272';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 15;
+        node-label = 'IObserver<CalibrationProgressEventArgs>';
+      }; /* node */
+      node = {
+        node-id    = 14;
+        node-label = 'shahqaan.kinect.Skeletons.CalibrationCompleteObserver';
+        node-child = {
+          child-id = '15';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 17;
+        node-label = 'IObserver<CalibrationProgressEventArgs>';
+      }; /* node */
+      node = {
+        node-id    = 16;
+        node-label = 'shahqaan.kinect.Skeletons.CalibrationCompleteObserver';
+        node-child = {
+          child-id = '17';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_control_panel';
+  cp-name   = 'shahqaan::kinect::ControlPanel';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_j_panel';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classjava_1_1awt_1_1event_1_1_action_listener';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_control_panel_1a56047cf0b9f9fb36c769d1d95509d10b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ControlPanel';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ExtendedSkeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeleton';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+AbstractLoggable
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'loggable';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+AbstractDrawable
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'drawable';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+AbstractTrackable
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'trackable';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_control_panel_1aa510ff0d643e8ef712cba19b4df8cede';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'actionPerformed';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ActionEvent
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'event';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_control_panel_1a6029ec089c7d2228962b55169bebe845';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'paintComponent';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Graphics
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'g';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_control_panel_1a8df900af585550fc1c467cf96b9f0572';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Font
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'msgFont';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+      sec-mem-desc-line = '9';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_control_panel_1a4aaede10357cdb6579890e1ec3343b76';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+JButton
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'startButton';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+      sec-mem-desc-line = '10';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_control_panel_1a560cc2c42e9567ab877961006d844de8';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ExtendedSkeletons
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'skels';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_control_panel_1ae7e8edac9500bc857c08b84943008da1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+AbstractDrawable
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'drawable';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_control_panel_1a595942aac6a431ec7d27828bfb7e09ee';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+AbstractLoggable
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'loggable';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_control_panel_1af218932d705d5b843c0aa55aa702ecd5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+AbstractTrackable
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'trackable';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+      sec-mem-desc-line = '15';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+  cp-fileline  = '8';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 19;
+        node-label = 'JPanel';
+      }; /* node */
+      node = {
+        node-id    = 20;
+        node-label = 'ActionListener';
+      }; /* node */
+      node = {
+        node-id    = 18;
+        node-label = 'shahqaan.kinect.ControlPanel';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_control_panel';
+        };
+        node-child = {
+          child-id = '19';
+          relation = public-inheritance;
+        }; /* node-child */
+        node-child = {
+          child-id = '20';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 22;
+        node-label = 'JPanel';
+      }; /* node */
+      node = {
+        node-id    = 23;
+        node-label = 'ActionListener';
+      }; /* node */
+      node = {
+        node-id    = 21;
+        node-label = 'shahqaan.kinect.ControlPanel';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_control_panel';
+        };
+        node-child = {
+          child-id = '22';
+          relation = public-inheritance;
+        }; /* node-child */
+        node-child = {
+          child-id = '23';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_drawable_skeleton';
+  cp-name   = 'shahqaan::kinect::DrawableSkeleton';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'interfaceshahqaan_1_1kinect_1_1_abstract_drawable';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_drawable_skeleton_1a208b9d6cbc73f4f7e026d165207c776b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'drawSkeleton';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Graphics2D
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'g2d';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/DrawableSkeleton.java';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param g2d
+@param skel
+@param skeletons
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_drawable_skeleton_8java_1a006c717eaf8701b283d1dc4dcedbbae9';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'shahqaan.kinect.DrawableSkeleton::drawLine';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_drawable_skeleton_1a006c717eaf8701b283d1dc4dcedbbae9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'drawLine';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Graphics2D
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'g2d';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SkeletonJoint
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'j1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SkeletonJoint
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'j2';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/DrawableSkeleton.java';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param g2d
+@param skel
+@param j1
+@param j2
+@param skeletons
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_drawable_skeleton_8java_1a208b9d6cbc73f4f7e026d165207c776b';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'shahqaan.kinect.DrawableSkeleton::drawSkeleton';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/DrawableSkeleton.java';
+  cp-fileline  = '17';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+@author Shahqaan Qasim
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 24;
+        node-label = 'shahqaan.kinect.DrawableSkeleton';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_drawable_skeleton';
+        };
+        node-child = {
+          child-id = '25';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 25;
+        node-label = 'shahqaan.kinect.AbstractDrawable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_drawable';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 26;
+        node-label = 'shahqaan.kinect.DrawableSkeleton';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_drawable_skeleton';
+        };
+        node-child = {
+          child-id = '27';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 27;
+        node-label = 'shahqaan.kinect.AbstractDrawable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_drawable';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_emotion';
+  cp-name   = 'shahqaan::kinect::Emotion';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_emotion_1accf792d51a7835187f829f02c94bc916';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Parts
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getParts';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotion.java';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_emotion_1a90b9c678373f6658a3bed6e14f9893d4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setParts';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Parts
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'parts';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotion.java';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_emotion_1ab929e8e15f037353ba4ed7bd20692347';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Parts
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'parts';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotion.java';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotion.java';
+  cp-fileline  = '15';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Created with IntelliJ IDEA.
+User: Shahqaan Qasim
+Date: 3/30/13
+Time: 3:21 PM
+To change this template use File | Settings | File Templates.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_emotions';
+  cp-name   = 'shahqaan::kinect::Emotions';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_emotions_1a4819b7325ebce866457203cd79af4e09';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Emotion
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getHappy';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotions.java';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_emotions_1acf762a748b69ca1700acba40babf2b04';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setHappy';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Emotion
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'happy';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotions.java';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_emotions_1ad9fdf0d8c5ddd866343a3d61cd98bb09';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Emotion
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getAngry';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotions.java';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_emotions_1a411fe9475b808a205335b5d37ee9f769';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setAngry';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Emotion
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'angry';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotions.java';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_emotions_1a811ba1dec8aa7c416cdc57083932a2e2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Emotion
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'happy';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotions.java';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_emotions_1a54dd7f7f63785c27cda14bc7c5af564a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Emotion
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'angry';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotions.java';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotions.java';
+  cp-fileline  = '16';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Created with IntelliJ IDEA.
+User: Shahqaan Qasim
+Date: 3/30/13
+Time: 3:36 PM
+To change this template use File | Settings | File Templates.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_extended_skeletons';
+  cp-name   = 'shahqaan::kinect::ExtendedSkeletons';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_skeletons';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_extended_skeletons_1a35840072869d31cde236b47036307338';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'draw';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Graphics2D
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'g2d';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+      sec-mem-desc-line = '85';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Calls AbstractDrawable.drawSkeleton()
+Draws on g2d
+
+@param g2d
+ Graphics2D instance received from paint
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_skeleton_panel_8java_1ac33a7bb72adba42dbde1cb061c7a4199';
+        sec-mem-ref-line = '86';
+        sec-mem-ref-name = 'shahqaan.kinect.SkeletonPanel::paintComponent';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_extended_skeletons_1ad9cb768f30c0d7e66ae7a044b1d586dc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static ExtendedSkeletons
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getInstance';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+AbstractDrawable
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'drawable';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+AbstractLoggable
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'loggable';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+AbstractTrackable
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'tracker';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param drawable
+ AbstractDrawable instance passed to this class
+@param loggable
+ AbstractLoggable instance passed to this class
+@param tracker
+ AbstractTracker instance passed to this class
+@return ExtendedSkeletons instance if none
+ exists already
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'protected-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_extended_skeletons_1a8692155f777a476afd829822316ad708';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'finalize';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+      sec-mem-desc-line = '74';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Subtracts 1 from count
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_extended_skeletons_1ad0ab4e04c60df124ea7cb5b0b5ead7af';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'updateJoint';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'userID';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SkeletonJoint
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'joint';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+      sec-mem-desc-line = '164';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Logs in another thread
+Calls updateJoint() of Skeletons
+Calls tracker.track()
+
+@param skel
+ HashMap<SkeletonJoint, SkeletonJointPosition>
+@param userID
+ int current user id
+@param joint
+ SkeletonJoint
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_extended_skeletons_1a83f803def8be06ab576eaa0e4f887372';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ExtendedSkeletons';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+AbstractDrawable
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'drawable';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+AbstractLoggable
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'loggable';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+AbstractTrackable
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'tracker';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param drawable
+ assigns to local copy of AbstractDrawable
+@param loggable
+ assigns to local copy of AbstractLoggable
+@param tracker
+ assigns to local copy of AbstractTrackable
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_extended_skeletons_1a6502d8de02eafc200a65c771b005f09a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+AbstractDrawable
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'drawable';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_extended_skeletons_1a25a868d7def721fd45c1c360cd3e7324';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+AbstractLoggable
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'loggable';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_extended_skeletons_1a13a678152e23e82e75118ab23617d7ca';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+AbstractTrackable
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'tracker';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_extended_skeletons_1a64f4681af823b83aee1e9f6b7931d5c5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'count';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ExtendedSkeletons' objects count for Sigleton
+implementation
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 32;
+        node-label = 'shahqaan.kinect.ExtendedSkeletons';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_extended_skeletons';
+        };
+        node-child = {
+          child-id = '33';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 33;
+        node-label = 'shahqaan.kinect.Skeletons';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_skeletons';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 34;
+        node-label = 'shahqaan.kinect.ExtendedSkeletons';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_extended_skeletons';
+        };
+        node-child = {
+          child-id = '35';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 36;
+        node-label = 'HashMap< Integer, HashMap< SkeletonJoint, SkeletonJointPosition > >';
+      }; /* node */
+      node = {
+        node-id    = 35;
+        node-label = 'shahqaan.kinect.Skeletons';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_skeletons';
+        };
+        node-child = {
+          child-id = '36';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+userSkels
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_graph_panel';
+  cp-name   = 'shahqaan::kinect::GraphPanel';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_j_panel';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_graph_panel_1af167b3506e7fd7e0bbb9ed3a9910ce8d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GraphPanel';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ExtendedSkeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeleton';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/GraphPanel.java';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_graph_panel_1ab03c0cf76a1ba61af2fba3586508d1df';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'paintComponent';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Graphics
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'g';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/GraphPanel.java';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_graph_panel_1a2745f742682aeef552617b8ae7e3e2bf';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Font
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'msgFont';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/GraphPanel.java';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_graph_panel_1addef18a112d183c0f77a574a7e36c9d0';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ExtendedSkeletons
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'skels';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/GraphPanel.java';
+      sec-mem-desc-line = '15';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/GraphPanel.java';
+  cp-fileline  = '13';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 38;
+        node-label = 'JPanel';
+      }; /* node */
+      node = {
+        node-id    = 37;
+        node-label = 'shahqaan.kinect.GraphPanel';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_graph_panel';
+        };
+        node-child = {
+          child-id = '38';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 40;
+        node-label = 'JPanel';
+      }; /* node */
+      node = {
+        node-id    = 39;
+        node-label = 'shahqaan.kinect.GraphPanel';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_graph_panel';
+        };
+        node-child = {
+          child-id = '40';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_i_observer';
+  cp-name   = 'IObserver';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_calibration_complete_observer';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_lost_user_observer';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_new_user_observer';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_pose_detected_observer';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+  cp-fileline  = '272';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 45;
+        node-label = 'shahqaan::kinect::Skeletons::PoseDetectedObserver< PoseDetectionEventArgs >';
+        node-child = {
+          child-id = '41';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 44;
+        node-label = 'shahqaan::kinect::Skeletons::NewUserObserver< UserEventArgs >';
+        node-child = {
+          child-id = '41';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 43;
+        node-label = 'shahqaan::kinect::Skeletons::LostUserObserver< UserEventArgs >';
+        node-child = {
+          child-id = '41';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 42;
+        node-label = 'shahqaan::kinect::Skeletons::CalibrationCompleteObserver< CalibrationProgressEventArgs >';
+        node-child = {
+          child-id = '41';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 41;
+        node-label = 'IObserver';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_j_frame';
+  cp-name   = 'JFrame';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_main';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Main.java';
+  cp-fileline  = '25';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 47;
+        node-label = 'JFrame';
+      }; /* node */
+      node = {
+        node-id    = 48;
+        node-label = 'shahqaan.kinect.Main';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_main';
+        };
+        node-child = {
+          child-id = '47';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_j_panel';
+  cp-name   = 'JPanel';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_control_panel';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_graph_panel';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/GraphPanel.java';
+  cp-fileline  = '13';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 50;
+        node-label = 'JPanel';
+      }; /* node */
+      node = {
+        node-id    = 52;
+        node-label = 'shahqaan.kinect.GraphPanel';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_graph_panel';
+        };
+        node-child = {
+          child-id = '50';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 51;
+        node-label = 'shahqaan.kinect.ControlPanel';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_control_panel';
+        };
+        node-child = {
+          child-id = '50';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 53;
+        node-label = 'shahqaan.kinect.SkeletonPanel';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_skeleton_panel';
+        };
+        node-child = {
+          child-id = '50';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_loggable_skeleton';
+  cp-name   = 'shahqaan::kinect::LoggableSkeleton';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'interfaceshahqaan_1_1kinect_1_1_abstract_loggable';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_loggable_skeleton_1ac741ceada1dac3e5762c364ac17cd23d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'LoggableSkeleton';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/LoggableSkeleton.java';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_loggable_skeleton_1a5b27bc5e52e2fa7f27ca70966e2b7b86';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'start';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/LoggableSkeleton.java';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_loggable_skeleton_1a6107bef7217d7301b8c0f909525c5e90';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'log';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/LoggableSkeleton.java';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param skeletons
+@param skel
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_loggable_skeleton_1a0c4ea2fc9cffa884b9e4af3dc12adf23';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'stop';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/LoggableSkeleton.java';
+      sec-mem-desc-line = '76';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_loggable_skeleton_1a8456bde8021d6143ad7d5ffa514864e6';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+boolean
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isLogging';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/LoggableSkeleton.java';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_loggable_skeleton_1ab0da8ca64c8110faf0acb33885337ae9';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+FileOutputStream
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'out';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/LoggableSkeleton.java';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_loggable_skeleton_1abe1bbdeff19fc38e18d45a9fe0c38205';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+PrintStream
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'p';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/LoggableSkeleton.java';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/LoggableSkeleton.java';
+  cp-fileline  = '26';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+@author Shahqaan Qasim
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 55;
+        node-label = 'shahqaan.kinect.LoggableSkeleton';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_loggable_skeleton';
+        };
+        node-child = {
+          child-id = '56';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 56;
+        node-label = 'shahqaan.kinect.AbstractLoggable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_loggable';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 57;
+        node-label = 'shahqaan.kinect.LoggableSkeleton';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_loggable_skeleton';
+        };
+        node-child = {
+          child-id = '58';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 58;
+        node-label = 'shahqaan.kinect.AbstractLoggable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_loggable';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_lost_user_observer';
+  cp-name   = 'shahqaan::kinect::Skeletons::LostUserObserver';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_i_observer';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_lost_user_observer_1af1535ba59052760debcfd6d85a6073f7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'update';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+IObservable< UserEventArgs >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'observable';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+UserEventArgs
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'args';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '250';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+  cp-fileline  = '248';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 60;
+        node-label = 'IObserver< UserEventArgs >';
+      }; /* node */
+      node = {
+        node-id    = 59;
+        node-label = 'shahqaan.kinect.Skeletons.LostUserObserver';
+        node-child = {
+          child-id = '60';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 62;
+        node-label = 'IObserver< UserEventArgs >';
+      }; /* node */
+      node = {
+        node-id    = 61;
+        node-label = 'shahqaan.kinect.Skeletons.LostUserObserver';
+        node-child = {
+          child-id = '62';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_main';
+  cp-name   = 'shahqaan::kinect::Main';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_j_frame';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_main_1a001cf56441154940b72407e47f91cc9b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Main';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Main.java';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_main_1a4f899668251003bd907ca4be9fd0212f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'main';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+String
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'args';
+        sec-mem-param-array = '[]';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Main.java';
+      sec-mem-desc-line = '129';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_main_1ab918a0e1e5434053e9dc0e9d5ff9e904';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SkeletonPanel
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'skeletonPanel';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Main.java';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_main_1a4a9e1a8ca6004699d3660e5fcf5056d5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+JPanel
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mainPanel';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Main.java';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_main_1a31d54c266eb3cb423383ab0711f5ce89';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+JPanel
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'subPanel';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Main.java';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_main_1a098fe83104c5f7c5671b7a1a2c527411';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+GraphPanel
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'graphPanel';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Main.java';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_main_1a6ecba64271313aeb7626983d0176e7e8';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ControlPanel
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'controlPanel';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Main.java';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Main.java';
+  cp-fileline  = '25';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Initializes
+ DrawableSkeleton, LoggableSkeleton, TrackableSkeleton
+ and ExtendedSkeletons
+
+Initializes
+ SkeletonPanel, GraphPanel, ControlPanel
+ mainPanel (JPanel) and subPanel (JPanel)
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 64;
+        node-label = 'JFrame';
+      }; /* node */
+      node = {
+        node-id    = 63;
+        node-label = 'shahqaan.kinect.Main';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_main';
+        };
+        node-child = {
+          child-id = '64';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 71;
+        node-label = 'shahqaan.kinect.AbstractTrackable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_trackable';
+        };
+      }; /* node */
+      node = {
+        node-id    = 66;
+        node-label = 'JFrame';
+      }; /* node */
+      node = {
+        node-id    = 65;
+        node-label = 'shahqaan.kinect.Main';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_main';
+        };
+        node-child = {
+          child-id = '66';
+          relation = public-inheritance;
+        }; /* node-child */
+        node-child = {
+          child-id = '67';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+loggableSkeleton
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '68';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+skeleton
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '71';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+trackableSkeleton
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '72';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+drawableSkeleton
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 68;
+        node-label = 'shahqaan.kinect.ExtendedSkeletons';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_extended_skeletons';
+        };
+        node-child = {
+          child-id = '69';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 70;
+        node-label = 'HashMap< Integer, HashMap< SkeletonJoint, SkeletonJointPosition > >';
+      }; /* node */
+      node = {
+        node-id    = 67;
+        node-label = 'shahqaan.kinect.AbstractLoggable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_loggable';
+        };
+      }; /* node */
+      node = {
+        node-id    = 69;
+        node-label = 'shahqaan.kinect.Skeletons';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_skeletons';
+        };
+        node-child = {
+          child-id = '70';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+userSkels
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 72;
+        node-label = 'shahqaan.kinect.AbstractDrawable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_drawable';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_new_user_observer';
+  cp-name   = 'shahqaan::kinect::Skeletons::NewUserObserver';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_i_observer';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_new_user_observer_1ac81909a049a9700e2251867993183df0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'update';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+IObservable< UserEventArgs >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'observable';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+UserEventArgs
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'args';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '237';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+  cp-fileline  = '235';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 73;
+        node-label = 'shahqaan.kinect.Skeletons.NewUserObserver';
+        node-child = {
+          child-id = '74';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 74;
+        node-label = 'IObserver< UserEventArgs >';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 75;
+        node-label = 'shahqaan.kinect.Skeletons.NewUserObserver';
+        node-child = {
+          child-id = '76';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 76;
+        node-label = 'IObserver< UserEventArgs >';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_parts';
+  cp-name   = 'shahqaan::kinect::Parts';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1a4bebaeffea26ad6e50448558809fb4d3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getHead';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1aca656d56b11c91c73f656e7ef9553b8e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setHead';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'head';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1ae34019b4e52a3b6180bdbb7f476073ba';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getShoulders';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1a79d9056b53e76a27429b89bb0689f091';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setShoulders';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'shoulders';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1a0929657199af26d4194bb5af433c95cd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getChest';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1a5b3b2db1132ce4c04b73902a0f8d5869';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setChest';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'chest';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1a9c8c4bc857bdca69281a75033152ca89';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getKnees';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1a432d741b5dc023db4bb260ae45f72e5d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setKnees';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'knees';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1ae0b9b19ccaa3d3f71e1efe851bc96db1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getArms';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '59';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1a15678a37759eb11c4e77c0b026f1f9a2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setArms';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'arms';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '64';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1ae68468a0e8ec30ce4a5e651a3e80051f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'head';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1a784d31bdb9e3d16fe55486c45f337685';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'shoulders';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1a30525fa643b4433fbf3bd09c65bf7055';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'chest';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1a1ea48e43efc0dd88b04ba19a65130fc5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'knees';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_parts_1ad588c1c9faec9f56b250207cdd590c91';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+BodyPart
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'arms';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+  cp-fileline  = '15';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Created with IntelliJ IDEA.
+User: Shahqaan Qasim
+Date: 3/30/13
+Time: 3:06 PM
+To change this template use File | Settings | File Templates.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_pose_detected_observer';
+  cp-name   = 'shahqaan::kinect::Skeletons::PoseDetectedObserver';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_i_observer';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1_1_pose_detected_observer_1ac7d2c7ad3830f7c8f1b7c3629052d3f7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'update';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+IObservable< PoseDetectionEventArgs >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'observable';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+PoseDetectionEventArgs
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'args';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '259';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+  cp-fileline  = '256';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 80;
+        node-label = 'IObserver< PoseDetectionEventArgs >';
+      }; /* node */
+      node = {
+        node-id    = 79;
+        node-label = 'shahqaan.kinect.Skeletons.PoseDetectedObserver';
+        node-child = {
+          child-id = '80';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 82;
+        node-label = 'IObserver< PoseDetectionEventArgs >';
+      }; /* node */
+      node = {
+        node-id    = 81;
+        node-label = 'shahqaan.kinect.Skeletons.PoseDetectedObserver';
+        node-child = {
+          child-id = '82';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_runnable';
+  cp-name   = 'Runnable';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+  cp-fileline  = '22';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 84;
+        node-label = 'shahqaan.kinect.SkeletonPanel';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_skeleton_panel';
+        };
+        node-child = {
+          child-id = '83';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 83;
+        node-label = 'Runnable';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_skeleton_panel';
+  cp-name   = 'shahqaan::kinect::SkeletonPanel';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_j_panel';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_runnable';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel_1ab7bfeeea8e3f25ffac6d2dd4f4c7e2cc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'SkeletonPanel';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ExtendedSkeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeleton';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+AbstractLoggable
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'loggableSkeleton';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Configures JPanel properties
+Assigns variables
+Starts new thread for ExtendedSkeletons.update()
+
+@param skeleton
+ ExtendedSkeletons instance passed to this class
+@param loggableSkeleton
+ AbstractLoggable intance passed to this class
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel_1ac1bd2c0659e86382df5b48d903a0d256';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Dimension
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getPreferredSize';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel_1a39124ff198ed520dea564d61b236b204';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'closeDown';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+      sec-mem-desc-line = '60';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel_1a87dac3cd9d5bc7993aa55b004eff204c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'run';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+      sec-mem-desc-line = '68';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Calls ExtendedSkeletons.update()
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_skeletons_8java_1ad92c8f39a7d775859eb3dab7478961cb';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'shahqaan.kinect.Skeletons::update';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel_1ac33a7bb72adba42dbde1cb061c7a4199';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'paintComponent';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Graphics
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'g';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+      sec-mem-desc-line = '86';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Calls ExtendedSkeletons.update
+
+@param g
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_extended_skeletons_8java_1a35840072869d31cde236b47036307338';
+        sec-mem-ref-line = '85';
+        sec-mem-ref-name = 'shahqaan.kinect.ExtendedSkeletons::draw';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel_1a6f21809d6843c59386692cd89cbd25f5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+volatile boolean
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isRunning';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel_1ad43325b4994486e9c50e4dc7c3c00d6e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Font
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'msgFont';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel_1a72f75cf4fc808b7f1a16a17f4ee9d98d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+ExtendedSkeletons
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'skels';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+      sec-mem-desc-line = '26';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeleton_panel_1ade3dfbfe0f1a2cfb0d35284878ae5941';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+AbstractLoggable
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'loggable';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+  cp-fileline  = '22';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Extends JPanel
+Implements Runnable
+
+Calls
+ ExtendedSkeletons.draw()
+ ExtendedSkeletons.update() in a different thread
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 87;
+        node-label = 'JPanel';
+      }; /* node */
+      node = {
+        node-id    = 86;
+        node-label = 'shahqaan.kinect.SkeletonPanel';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_skeleton_panel';
+        };
+        node-child = {
+          child-id = '87';
+          relation = public-inheritance;
+        }; /* node-child */
+        node-child = {
+          child-id = '88';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 88;
+        node-label = 'Runnable';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 90;
+        node-label = 'JPanel';
+      }; /* node */
+      node = {
+        node-id    = 89;
+        node-label = 'shahqaan.kinect.SkeletonPanel';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_skeleton_panel';
+        };
+        node-child = {
+          child-id = '90';
+          relation = public-inheritance;
+        }; /* node-child */
+        node-child = {
+          child-id = '91';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 91;
+        node-label = 'Runnable';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_skeletons';
+  cp-name   = 'shahqaan::kinect::Skeletons';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classshahqaan_1_1kinect_1_1_extended_skeletons';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a9206541c0190d150788499897c06eab5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Skeletons';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1afe757feb53a5d7113f3cd8ed40ce80f0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getXRes';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '47';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a1c2e522d720527858a321f3231b72d61';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getYRes';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1ad92c8f39a7d775859eb3dab7478961cb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'update';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '117';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Update the skeleton of each user
+Called from run() in TrackerPanel 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_skeleton_panel_8java_1a87dac3cd9d5bc7993aa55b004eff204c';
+        sec-mem-ref-line = '68';
+        sec-mem-ref-name = 'shahqaan.kinect.SkeletonPanel::run';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'protected-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1ade9c15dc11059dbdd2edc45cb55d0a75';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'updateJoint';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'userID';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SkeletonJoint
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'joint';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '179';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a7b394b6b1715272e24d2397408be88a2';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Point3D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getJointPos';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SkeletonJoint
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'j';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '218';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'protected-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1afe9c6555c5bbf599b071afd7ea3ed338';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+UserGenerator
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'userGen';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a9425a300bfff51142252d8900fe9c9f1';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+DepthGenerator
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'depthGen';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1af94d8bd12e822b0bbc2ff8fbd04ecf24';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SkeletonCapability
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'skelCap';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a8be3b58ddf96e05f8fbde115bb8d71b9';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+PoseDetectionCapability
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'poseDetectionCap';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a0e9c355495cf08a6e95ea91a8344417f';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+String
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'calibPoseName';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a04aa09e2e831564070bf16ab6810565c';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+HashMap< Integer, HashMap< SkeletonJoint, SkeletonJointPosition > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'userSkels';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a4c5198f66628557a81aaf4e8512c6513';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Context
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'context';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1aa2a2f3ae233ec89a530fb2cbc8653509';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+DepthMetaData
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'depthMD';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a9fcd7aeb57c406939501f27a60e892d7';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+boolean
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isRunning';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '40';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a1b5103fa334523f7d7c86a62d178592e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'configOpenNI';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a895e51f7ec7d49e47d73395aed59fe46';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'configure';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '84';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Create pose and skeleton detection capabilities for the user generator, 
+Set up observers (listeners)   
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_skeletons_1a88ae2a079416470389610511bf65a2f2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'updateJoints';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'userID';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+      sec-mem-desc-line = '143';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param userID: User whose joints are to be updated
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+  cp-fileline  = '26';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 93;
+        node-label = 'shahqaan.kinect.ExtendedSkeletons';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_extended_skeletons';
+        };
+        node-child = {
+          child-id = '92';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 92;
+        node-label = 'shahqaan.kinect.Skeletons';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_skeletons';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 95;
+        node-label = 'HashMap< Integer, HashMap< SkeletonJoint, SkeletonJointPosition > >';
+      }; /* node */
+      node = {
+        node-id    = 94;
+        node-label = 'shahqaan.kinect.Skeletons';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_skeletons';
+        };
+        node-child = {
+          child-id = '95';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+userSkels
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classshahqaan_1_1kinect_1_1_trackable_skeleton';
+  cp-name   = 'shahqaan::kinect::TrackableSkeleton';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'interfaceshahqaan_1_1kinect_1_1_abstract_trackable';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a93c19ac445b6c3523efd62f444dd68e8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'track';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '443';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param skeletons
+@param skel 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1aab3cc8d358de4574a229bdf95c9f9de9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static TrackableSkeleton
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getTracker';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '78';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'protected-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a8a595d0471def0a3f196574a73c60e54';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'finalize';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '90';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1ad49b5fddd731e223a591f19ba40a411c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TrackableSkeleton';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '94';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a065dc3e53997cd2c442054d2ebe93113';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'buildPartsFromXml';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+String
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'path';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '100';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a2a8e825d7d41e6b6eb43f7d39bcdad94';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'buildPartsValuesFromXml';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+String
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'path';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '112';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a307b0fd4c5aee537d718c8fc09fe648c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'buildEmotionsFromXml';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+String
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'path';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '124';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a5b5b1def5bf69fd9eb95007f88c66663';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'findAngle';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'z';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'a';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'b';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'c';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'p';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'q';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'r';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '154';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x
+@param y
+@param z
+@param a
+@param b
+@param c
+@param p
+@param q
+@param r
+@return
+     angle in radians
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a79d5ff9d06164672e013bc8c19192c4f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'xFromTorso';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '187';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a87b15fbb57873ae447d55e74a3033d3c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'yFromTorso';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '196';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a06645e1faae93c923311da475f9f1649';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'zFromTorso';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'z';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '205';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a50aa5f70b78ece6615722457d0b09d63';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'testRightKnee';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '216';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1af1bce2cafc87cf5d46a20b5f7e74e127';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'testRightArm';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '268';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a29cafa34a178f39476b595f9176e9418';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'testLeftArm';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '339';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1ae90cbd8040288d9f89e661a2ac2b6909';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'testChest';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '391';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a1d34a1aaa1a3464f71fd9ec2415257fa';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'testHead';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Skeletons
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skeletons';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+HashMap< SkeletonJoint, SkeletonJointPosition >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'skel';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '413';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a5b8d5ad3cfd5c6b3a5b3f46d725a1752';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'determineEmotions';
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '435';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1ade7242dd818d0ebd8415e1a7f7243ad2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Parts
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'parts';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a025beae14b8f7a8f7a78eab905f0de28';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Parts
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'partsValues';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '51';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1ae24cbaec6b46c0cd3fe7b1a4059c5821';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Emotions
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'emotions';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '52';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a11c1e3322a4d091a8a83dd9a6a2e08b5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+HashMap< String, Float >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'headValues';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a4cf9ec44f06300d513197c7b5105bc4b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+HashMap< String, Float >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'armsValues';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1aa2b25c62fab666956533db83f9ada717';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+HashMap< String, Float >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'kneesValues';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1af4bd7e1774e93005363e907b665e6a31';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+HashMap< String, Float >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'shouldersValues';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= null
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '57';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a49f27b8ff55df937766993982c759271';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'armAllowedAngle';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0.35
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '62';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Variables for arm and hands
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1aa85f28df01876b5f6ce29fabaf120ec2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'armSlightExtension';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 150.0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a114325e7eced08db378189d9bee6201d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'armFullExtension';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 200.0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '64';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a52912f221709af8ff1052c8b8ef6d14f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'armForwardThreshold';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -250.0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '65';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a321422743ec0bb56b5fee81d892031eb';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'armBackwardThreshold';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 150.0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '66';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a35b608c6df3b0485aaa14e9f85dc9156';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'kneeBendThreshold';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -70.0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '69';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1af82bba4dda46124d74e66bbd63815998';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'headBendThreshold';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -35.0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '71';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a05b00922dbd82575c7cd2772bafcf8f9';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'headBackThreshold';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 50.0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '72';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a6481c39312088d28853d5aec21684400';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'chestBendThreshold';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -30.0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '74';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a42bb869e5cf4bc524fc88239ba03d99f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'chestBackThreshold';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 40.0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '75';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a90fd2b22732b42c119b0a039ec6a4c88';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'count';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '43';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a9ad1a59985f8024c677bcfb3b429c33e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static final String
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'CONFIGURATION_DIRECTORY_PATH';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "D:\\Documents\\Projects\\FYP - Computer Generated Art\\Development\\kinect-body-language-analysis\\"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a29434bde8eacdabf1ef8b65836b509c1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static final String
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'PARTS_FILE';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= CONFIGURATION_DIRECTORY_PATH + "Parts Configurations.xml"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a9004d7f08371dc193fbee4f1268033c2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static final String
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'PARTS_VALUES_FILE';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= CONFIGURATION_DIRECTORY_PATH + "Parts Values Configurations.xml"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '47';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classshahqaan_1_1kinect_1_1_trackable_skeleton_1a2fca36310f2daa2e235778bbcdc502f5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static final String
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'EMOTIONS_FILE';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= CONFIGURATION_DIRECTORY_PATH + "Emotions Configurations.xml"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+      sec-mem-desc-line = '48';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+  cp-fileline  = '41';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+@author Shahqaan Qasim
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 97;
+        node-label = 'shahqaan.kinect.AbstractTrackable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_trackable';
+        };
+      }; /* node */
+      node = {
+        node-id    = 96;
+        node-label = 'shahqaan.kinect.TrackableSkeleton';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_trackable_skeleton';
+        };
+        node-child = {
+          child-id = '97';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 99;
+        node-label = 'shahqaan.kinect.AbstractTrackable';
+        node-link = {
+          node-link-id = 'interfaceshahqaan_1_1kinect_1_1_abstract_trackable';
+        };
+      }; /* node */
+      node = {
+        node-id    = 98;
+        node-label = 'shahqaan.kinect.TrackableSkeleton';
+        node-link = {
+          node-link-id = 'classshahqaan_1_1kinect_1_1_trackable_skeleton';
+        };
+        node-child = {
+          child-id = '99';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+file = {
+  file-id   = '_abstract_drawable_8java';
+  file-name = 'AbstractDrawable.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractDrawable.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_abstract_loggable_8java';
+  file-name = 'AbstractLoggable.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractLoggable.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_abstract_trackable_8java';
+  file-name = 'AbstractTrackable.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/AbstractTrackable.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_body_part_8java';
+  file-name = 'BodyPart.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPart.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_body_part_parameter_8java';
+  file-name = 'BodyPartParameter.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/BodyPartParameter.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_control_panel_8java';
+  file-name = 'ControlPanel.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ControlPanel.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_drawable_skeleton_8java';
+  file-name = 'DrawableSkeleton.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/DrawableSkeleton.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_emotion_8java';
+  file-name = 'Emotion.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotion.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_emotions_8java';
+  file-name = 'Emotions.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Emotions.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_extended_skeletons_8java';
+  file-name = 'ExtendedSkeletons.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/ExtendedSkeletons.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_graph_panel_8java';
+  file-name = 'GraphPanel.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/GraphPanel.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_loggable_skeleton_8java';
+  file-name = 'LoggableSkeleton.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/LoggableSkeleton.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_main_8java';
+  file-name = 'Main.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Main.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_parts_8java';
+  file-name = 'Parts.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Parts.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_skeleton_panel_8java';
+  file-name = 'SkeletonPanel.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/SkeletonPanel.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_skeletons_8java';
+  file-name = 'Skeletons.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/Skeletons.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_trackable_skeleton_8java';
+  file-name = 'TrackableSkeleton.java';
+  file-full-name  = 'D:/Documents/Projects/FYP - Computer Generated Art/Development/kinect-body-language-analysis/src/shahqaan/kinect/TrackableSkeleton.java';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */

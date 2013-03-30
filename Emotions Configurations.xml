@@ -17,9 +17,9 @@
                 </upward>
             </arms>
             <head>
-                <forward>
-                    <max>10</max>
-                    <min>-10</min>
+                <forward> <!--z from torso-->
+                    <max>5</max> <!--halfway forward-->
+                    <min>0</min> <!--center-->
                 </forward>
             </head>
             <knees>
@@ -57,9 +57,9 @@
                 </upward>
             </arms>
             <head>
-                <forward>
-                    <max>10</max>
-                    <min>-10</min>
+                <forward> <!--z from torso-->
+                    <max>0</max> <!--center-->
+                    <min>-5</min> <!--halfway backward-->
                 </forward>
             </head>
             <knees>

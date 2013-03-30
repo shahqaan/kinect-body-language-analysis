@@ -39,14 +39,19 @@ import javax.xml.bind.Marshaller;
  * @author Shahqaan Qasim
  */
 public class TrackableSkeleton implements AbstractTrackable {
-
-    private final static String PARTS_FILE = "D:\\Documents\\Projects\\FYP - Computer Generated Art\\Documentation\\Miscellaneous Documents\\Documents\\Project XML Configurations\\Parts Configurations.xml";
-    private final static String PARTS_VALUES_FILE = "D:\\Documents\\Projects\\FYP - Computer Generated Art\\Documentation\\Miscellaneous Documents\\Documents\\Project XML Configurations\\Parts Values Configurations.xml";
-    private final static String EMOTIONS_FILE = "D:\\Documents\\Projects\\FYP - Computer Generated Art\\Documentation\\Miscellaneous Documents\\Documents\\Project XML Configurations\\Emotions Configurations.xml";
+    private final static String CONFIGURATION_DIRECTORY_PATH = "D:\\Documents\\Projects\\FYP - Computer Generated Art\\Development\\kinect-body-language-analysis\\";
+    private final static String PARTS_FILE = CONFIGURATION_DIRECTORY_PATH + "Parts Configurations.xml";
+    private final static String PARTS_VALUES_FILE = CONFIGURATION_DIRECTORY_PATH + "Parts Values Configurations.xml";
+    private final static String EMOTIONS_FILE = CONFIGURATION_DIRECTORY_PATH + "Emotions Configurations.xml";
 
     private Parts parts = null;
     private Parts partsValues = null;
     private Emotions emotions = null;
+
+    private HashMap<String, Float> headValues = null;
+    private HashMap<String, Float> armsValues = null;
+    private HashMap<String, Float> kneesValues = null;
+    private HashMap<String, Float> shouldersValues = null;
 
     /**
      * Variables for arm and hands
@@ -397,55 +402,32 @@ public class TrackableSkeleton implements AbstractTrackable {
             z = point.getZ();
         }
         float headFromTorso = this.zFromTorso(skeletons, skel, z);
-        if (headFromTorso < this.headBendThreshold) {
+
+        int actualSpan = (this.partsValues.getHead().getForward().getSpan());
+        int mappedSpan = (this.parts.getHead().getForward().getSpan());
+
+        float mappedPosition = (headFromTorso / (float) actualSpan) * (float) mappedSpan;
+
+        if (this.headValues == null) { // create an instance if it doesn't already exist
+            this.headValues = new HashMap<>();
+        }
+
+        this.headValues.put("forward", mappedPosition);
+    }
+
+    private void determineEmotions() {
+        if (this.headValues != null) {
 
         }
-        else {
-            if (headFromTorso > this.headBackThreshold) {
-
-            }
-            else {
-
-            }
-        }
-        /*
-        point = skeletons.getJointPos(skel, SkeletonJoint.NECK);
-        if (point != null) {
-            x = point.getX();
-            y = point.getY();
-            z = point.getZ();
-        }
-        float neckFromTorso = this.zFromTorso(skeletons, skel, z);
-        ExtendedSkeletons.MESSAGE_2 = "N " + (int)neckFromTorso;
-        
-        point = skeletons.getJointPos(skel, SkeletonJoint.RIGHT_COLLAR);
-        if (point != null) {
-            x = point.getX();
-            y = point.getY();
-            z = point.getZ();
-        }        
-        float collarFromTorso = this.zFromTorso(skeletons, skel, z);
-        ExtendedSkeletons.MESSAGE_3 = "C " + (int)collarFromTorso;
-        
-        point = skeletons.getJointPos(skel, SkeletonJoint.RIGHT_SHOULDER);
-        if (point != null) {
-            x = point.getX();
-            y = point.getY();
-            z = point.getZ();
-        }        
-        float shoulderFromTorso = this.zFromTorso(skeletons, skel, z);        
-        ExtendedSkeletons.MESSAGE_4 = "S " + (int)shoulderFromTorso;
-        * */
-        
-        
     }
 
     @Override
     public void track(Skeletons skeletons, HashMap<SkeletonJoint, SkeletonJointPosition> skel) {
-        this.testRightArm(skeletons, skel);
-        this.testRightKnee(skeletons, skel);
+        // this.testRightArm(skeletons, skel);
+        // this.testRightKnee(skeletons, skel);
         // this.testChest(skeletons, skel);
         this.testHead(skeletons, skel);
+        this.determineEmotions();
     }
 
 

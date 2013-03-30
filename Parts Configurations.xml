@@ -15,9 +15,9 @@
         </upward>
     </arms>
     <head>
-        <forward>
-            <max>10</max>
-            <min>-10</min>
+        <forward> <!--z of head from torso-->
+            <max>10</max> <!--value to be given to full forward-->
+            <min>-10</min> <!--value to be given to full backward-->
         </forward>
     </head>
     <knees>

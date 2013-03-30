@@ -39,6 +39,9 @@ import javax.xml.bind.Marshaller;
  * @author Shahqaan Qasim
  */
 public class TrackableSkeleton implements AbstractTrackable {
+
+    private static int count = 0;
+
     private final static String CONFIGURATION_DIRECTORY_PATH = "D:\\Documents\\Projects\\FYP - Computer Generated Art\\Development\\kinect-body-language-analysis\\";
     private final static String PARTS_FILE = CONFIGURATION_DIRECTORY_PATH + "Parts Configurations.xml";
     private final static String PARTS_VALUES_FILE = CONFIGURATION_DIRECTORY_PATH + "Parts Values Configurations.xml";
@@ -72,13 +75,27 @@ public class TrackableSkeleton implements AbstractTrackable {
     private double chestBackThreshold = 40.0;
 
 
+    public static TrackableSkeleton getTracker() {
+        if (TrackableSkeleton.count <= 0) {
+            TrackableSkeleton.count++;
+            return new TrackableSkeleton();
+
+        }
+        else {
+            return null;
+        }
+    }
+
+    @Override
+    protected void finalize() {
+        TrackableSkeleton.count--;
+    }
+
     private TrackableSkeleton() {
         this.buildPartsFromXml(TrackableSkeleton.PARTS_FILE);
         this.buildPartsValuesFromXml(TrackableSkeleton.PARTS_VALUES_FILE);
         this.buildEmotionsFromXml(TrackableSkeleton.EMOTIONS_FILE);
     }
-
-    public static TrackableSkeleton getTracker() { return new TrackableSkeleton(); }
 
     private void buildPartsFromXml(String path) {
         try {
@@ -417,6 +434,7 @@ public class TrackableSkeleton implements AbstractTrackable {
 
     private void determineEmotions() {
         if (this.headValues != null) {
+            ExtendedSkeletons.MESSAGE = "HEAD: " + this.headValues.get("forward");
 
         }
     }

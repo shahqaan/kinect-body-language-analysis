@@ -1,17 +1,7 @@
 package shahqaan.kinect;
 
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-
-/**
- * Created with IntelliJ IDEA.
- * User: Shahqaan Qasim
- * Date: 3/29/13
- * Time: 11:46 PM
- * To change this template use File | Settings | File Templates.
- */
-
 
 @XmlRootElement
 public class BodyPartParameter {

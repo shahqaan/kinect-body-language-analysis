@@ -6,40 +6,48 @@ package shahqaan.kinect;
 
 import java.awt.Graphics2D;
 import java.util.HashMap;
+
+import com.sun.xml.internal.ws.api.message.HeaderList;
 import org.OpenNI.Point3D;
 import org.OpenNI.SkeletonJoint;
 import org.OpenNI.SkeletonJointPosition;
+
+import javax.xml.bind.Unmarshaller;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
+import java.util.ArrayList;
+
+
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Node;
+import org.w3c.dom.Element;
+import java.io.File;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+
 
 /**
  *
  * @author Shahqaan Qasim
  */
 public class TrackableSkeleton implements AbstractTrackable {
-    
-    
-    /**
-     * BODY STATE MATRIX
-     * 
-     * Body         0
-     * Head         1
-     * Shoulder     2
-     * Chest        3
-     * Arms         4
-     * Knees        5
-     * 
-     * 
-     * N/A                  0
-     * forward              1
-     * backward             2
-     * bent                 3
-     * straight             4
-     * forward or upward    5
-     * lifted upward        6
-     * crossed              7
-     * opened               8
-     */
-    public int[] bodyState = new int[6];
-    
+
+    private final static String PARTS_FILE = "D:\\Documents\\Projects\\FYP - Computer Generated Art\\Documentation\\Miscellaneous Documents\\Documents\\Project XML Configurations\\Parts Configurations.xml";
+    private final static String PARTS_VALUES_FILE = "D:\\Documents\\Projects\\FYP - Computer Generated Art\\Documentation\\Miscellaneous Documents\\Documents\\Project XML Configurations\\Parts Values Configurations.xml";
+    private final static String EMOTIONS_FILE = "D:\\Documents\\Projects\\FYP - Computer Generated Art\\Documentation\\Miscellaneous Documents\\Documents\\Project XML Configurations\\Emotions Configurations.xml";
+
+    private Parts parts = null;
+    private Parts partsValues = null;
+    private Emotions emotions = null;
+
     /**
      * Variables for arm and hands
      */
@@ -57,13 +65,52 @@ public class TrackableSkeleton implements AbstractTrackable {
     
     private double chestBendThreshold = -30.0;
     private double chestBackThreshold = 40.0;
-    
-    public TrackableSkeleton() {
-        for (int i = 0 ; i < 6 ; i++) {
-            bodyState[i] = 0;
+
+
+    private TrackableSkeleton() {
+        this.buildPartsFromXml(TrackableSkeleton.PARTS_FILE);
+        this.buildPartsValuesFromXml(TrackableSkeleton.PARTS_VALUES_FILE);
+        this.buildEmotionsFromXml(TrackableSkeleton.EMOTIONS_FILE);
+    }
+
+    public static TrackableSkeleton getTracker() { return new TrackableSkeleton(); }
+
+    private void buildPartsFromXml(String path) {
+        try {
+
+            File file = new File(path);
+            JAXBContext jaxbContext = JAXBContext.newInstance(Parts.class);
+
+            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+            this.parts = (Parts) jaxbUnmarshaller.unmarshal(file);
+        } catch (JAXBException e) {
+            e.printStackTrace();
         }
     }
-      
+    private void buildPartsValuesFromXml(String path) {
+        try {
+
+            File file = new File(path);
+            JAXBContext jaxbContext = JAXBContext.newInstance(Parts.class);
+
+            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+            this.partsValues = (Parts) jaxbUnmarshaller.unmarshal(file);
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+    }
+    private void buildEmotionsFromXml(String path) {
+        try {
+
+            File file = new File(path);
+            JAXBContext jaxbContext = JAXBContext.newInstance(Emotions.class);
+
+            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+            this.emotions = (Emotions) jaxbUnmarshaller.unmarshal(file);
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * 
@@ -170,16 +217,7 @@ public class TrackableSkeleton implements AbstractTrackable {
                 y = point.getY();
                 z = point.getZ();
             }
-            /*
-            point = skeletons.getJointPos(skel, SkeletonJoint.RIGHT_FOOT);
-            if (point == null) {
-            }
-            else {
-                p = point.getX();
-                q = point.getY();
-                r = point.getZ();
-            }*/
-            
+
             // Angle will tell whether the arm is straight or not
             // double angle = this.findAngle(x, y, z, a, b, c, p, q, r);
        
@@ -193,10 +231,8 @@ public class TrackableSkeleton implements AbstractTrackable {
             
             float zFromTorso = this.zFromTorso(skeletons, skel, z);
             if (zFromTorso < this.kneeBendThreshold) {
-                bodyState[5] = 3;
             }
             else {
-                bodyState[5] = 4;
             }
             
         } catch (Exception e) {
@@ -253,22 +289,20 @@ public class TrackableSkeleton implements AbstractTrackable {
             
             // Check if arm is extended
             if (xFromTorso > this.armFullExtension) {
-                bodyState[4] = 8;
             }
             else {
                 
                 // check if arm is crossed
                 if (xFromTorso < 0.0) {
-                    bodyState[4] = 7;
                 }
                 else {
 
                     // if not extended, check if they are forward
                     if (zFromTorso < this.armForwardThreshold) {
-                        bodyState[4] = 1;
+
                     }
                     else {
-                        bodyState[4] = 4;
+
                     }
                 }
             }
@@ -342,14 +376,14 @@ public class TrackableSkeleton implements AbstractTrackable {
         }
         float zFromTorso = this.zFromTorso(skeletons, skel, 0);
         if (zFromTorso < this.chestBendThreshold) {
-            bodyState[3] = 1;
+
         }
         else {
             if (zFromTorso > this.chestBackThreshold) {
-                bodyState[3] = 2;
+
             }
             else {
-                bodyState[3] = 0;
+
             }
         }
     }
@@ -364,14 +398,14 @@ public class TrackableSkeleton implements AbstractTrackable {
         }
         float headFromTorso = this.zFromTorso(skeletons, skel, z);
         if (headFromTorso < this.headBendThreshold) {
-            bodyState[1] = 3;
+
         }
         else {
             if (headFromTorso > this.headBackThreshold) {
-                bodyState[1] = 2;
+
             }
             else {
-                bodyState[1] = 4;
+
             }
         }
         /*
@@ -405,14 +439,13 @@ public class TrackableSkeleton implements AbstractTrackable {
         
         
     }
+
     @Override
     public void track(Skeletons skeletons, HashMap<SkeletonJoint, SkeletonJointPosition> skel) {
         this.testRightArm(skeletons, skel);
         this.testRightKnee(skeletons, skel);
         // this.testChest(skeletons, skel);
         this.testHead(skeletons, skel);
-        
-        ExtendedSkeletons.bodyState = this.bodyState;
     }
 
 

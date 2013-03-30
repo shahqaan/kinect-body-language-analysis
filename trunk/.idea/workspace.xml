@@ -5,7 +5,15 @@
     <ignored path="FYP - Body Language Analysis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Main.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364127355179" ignored="false" />
-    <file path="/ExtendedSkeletons.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364195827681" ignored="false" />
+    <file path="/ExtendedSkeletons.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364589621722" ignored="false" />
+    <file path="/TrackableSkeleton.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364640776344" ignored="false" />
+    <file path="/BodyPartParameter.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364638578707" ignored="false" />
+    <file path="/BodyPart.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364638544464" ignored="false" />
+    <file path="/SkeletonTrackerTest.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364636763748" ignored="false" />
+    <file path="/Emotions Configurations.xml" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364637585661" ignored="false" />
+    <file path="/Parts.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364638494276" ignored="false" />
+    <file path="/Emotion.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364639140724" ignored="false" />
+    <file path="/Emotions.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364639888407" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +28,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -65,38 +74,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Skeletons.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Skeletons.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="26" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControlPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="23" selection-start="880" selection-end="883" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkeletonTrackerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/SkeletonTrackerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="20" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExtendedSkeletons.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ExtendedSkeletons.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ExtendedSkeletons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="27" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.91749644">
-              <folding />
+            <state line="111" column="53" selection-start="4136" selection-end="4136" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#4641#4824#0" expanded="true" />
+                <element signature="e#4792#4793#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackableSkeleton.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/TrackableSkeleton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="441" column="4" selection-start="13986" selection-end="13986" vertical-scroll-proportion="1.1825293">
+              <folding>
+                <element signature="docComment;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="docComment;field#armAllowedAngle#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#TrackableSkeleton#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#getTracker#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#buildPartsFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#buildPartsValuesFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#buildEmotionsFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="docComment;method#findAngle#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#findAngle#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#xFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#yFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#zFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#testRightKnee#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="e#6840#6893#0" expanded="false" />
+                <element signature="method#testRightArm#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="e#8764#8817#0" expanded="false" />
+                <element signature="method#testLeftArm#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="e#11369#11399#0" expanded="false" />
+                <element signature="method#testChest#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#testHead#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#track#0;class#TrackableSkeleton#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,8 +128,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/Parts.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/BodyPart.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/BodyPartParameter.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/Emotion.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/Emotions.java" />
+        <option value="$PROJECT_DIR$/../../Documentation/Miscellaneous Documents/Documents/Project XML Configurations/Emotions Configurations.xml" />
+        <option value="$PROJECT_DIR$/../../Documentation/Miscellaneous Documents/Documents/Project XML Configurations/Parts Values Configurations .xml" />
         <option value="$PROJECT_DIR$/src/shahqaan/kinect/SkeletonTrackerTest.java" />
         <option value="$PROJECT_DIR$/src/shahqaan/kinect/ExtendedSkeletons.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/TrackableSkeleton.java" />
       </list>
     </option>
   </component>
@@ -192,14 +216,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/shahqaan/kinect/SkeletonTrackerTest.java" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -245,7 +269,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="FYP - Body Language Analysis" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -308,26 +338,27 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46526054" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32831737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26398852" sideWeight="0.6707819" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20972222" sideWeight="0.6401985" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3598015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -392,106 +423,120 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Skeletons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="43" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="23" selection-start="880" selection-end="883" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/SkeletonTrackerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="20" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ExtendedSkeletons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="29" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Skeletons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="43" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="23" selection-start="880" selection-end="883" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/SkeletonTrackerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="20" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Skeletons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="43" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="23" selection-start="880" selection-end="883" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/SkeletonTrackerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="27" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Skeletons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="32" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Skeletons.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="26" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/AbstractTrackable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="23" selection-start="880" selection-end="883" vertical-scroll-proportion="0.0">
+        <state line="14" column="17" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/AbstractDrawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="87" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/com/sun/org/apache/xerces/internal/parsers/AbstractSAXParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="542" column="0" selection-start="20812" selection-end="20812" vertical-scroll-proportion="0.26434782" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/BodyPart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="15" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/BodyPartParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="67" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Documentation/Miscellaneous Documents/Documents/Project XML Configurations/Parts Configurations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Emotions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="48" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Parts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="15" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Emotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="51" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Documentation/Miscellaneous Documents/Documents/Project XML Configurations/Emotions Configurations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="27" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.07692308" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Documentation/Miscellaneous Documents/Documents/Project XML Configurations/Parts Values Configurations .xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="141" selection-end="141" vertical-scroll-proportion="0.12820514" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/SkeletonTrackerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="20" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
+        <state line="31" column="42" selection-start="723" selection-end="723" vertical-scroll-proportion="0.46153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ExtendedSkeletons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="27" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.91749644">
-          <folding />
+        <state line="111" column="53" selection-start="4136" selection-end="4136" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#4641#4824#0" expanded="true" />
+            <element signature="e#4792#4793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/TrackableSkeleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="441" column="4" selection-start="13986" selection-end="13986" vertical-scroll-proportion="1.1825293">
+          <folding>
+            <element signature="docComment;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="docComment;field#armAllowedAngle#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#TrackableSkeleton#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#getTracker#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#buildPartsFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#buildPartsValuesFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#buildEmotionsFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="docComment;method#findAngle#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#findAngle#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#xFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#yFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#zFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#testRightKnee#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="e#6840#6893#0" expanded="false" />
+            <element signature="method#testRightArm#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="e#8764#8817#0" expanded="false" />
+            <element signature="method#testLeftArm#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="e#11369#11399#0" expanded="false" />
+            <element signature="method#testChest#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#testHead#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#track#0;class#TrackableSkeleton#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -501,6 +546,18 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -540,6 +597,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

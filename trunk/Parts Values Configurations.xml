@@ -15,9 +15,9 @@
         </upward>
     </arms>
     <head>
-        <forward>
-            <max>10</max>
-            <min>-10</min>
+        <forward> <!--z of head from torso-->
+            <max>-80</max> <!--full forward-->
+            <min>150</min> <!--full backward-->
         </forward>
     </head>
     <knees>

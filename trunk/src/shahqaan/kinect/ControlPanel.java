@@ -44,7 +44,7 @@ public class ControlPanel extends JPanel implements Runnable, ActionListener {
         
         loggable = new LoggableSkeleton();
         skels = new ExtendedSkeletons(new DrawableSkeleton(), loggable);
-        msgFont = new Font("SansSerif", Font.BOLD, 16);
+        msgFont = new Font("SansSerif", Font.BOLD, 24);
         new Thread(this).start();   // start updating the panel
     } 
 

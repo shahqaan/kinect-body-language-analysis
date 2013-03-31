@@ -14,6 +14,8 @@ import org.OpenNI.SkeletonJointPosition;
  * @author Shahqaan Qasim
  */
 public interface AbstractDrawable {
+    public void start();
+    public void stop();
     /**
      *
      * @param g2d

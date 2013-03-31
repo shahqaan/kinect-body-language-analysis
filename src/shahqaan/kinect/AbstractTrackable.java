@@ -14,6 +14,8 @@ import org.OpenNI.SkeletonJointPosition;
  */
 public interface AbstractTrackable {
 
+    public void start();
+    public void stop();
     /**
      * 
      * @param skeletons

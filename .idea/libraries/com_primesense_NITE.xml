@@ -2,6 +2,15 @@
   <library name="com.primesense.NITE">
     <CLASSES>
       <root url="jar://C:/Program Files/PrimeSense/NITE/Bin64/com.primesense.NITE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Compressed/jfreechart-1.0.14/jfreechart-1.0.14/lib/gnujaxp.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Compressed/jfreechart-1.0.14/jfreechart-1.0.14/lib/iText-2.1.5.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Compressed/jfreechart-1.0.14/jfreechart-1.0.14/lib/jcommon-1.0.17.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Compressed/jfreechart-1.0.14/jfreechart-1.0.14/lib/jfreechart-1.0.14-experimental.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Compressed/jfreechart-1.0.14/jfreechart-1.0.14/lib/jfreechart-1.0.14-swt.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Compressed/jfreechart-1.0.14/jfreechart-1.0.14/lib/jfreechart-1.0.14.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Compressed/jfreechart-1.0.14/jfreechart-1.0.14/lib/junit.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Compressed/jfreechart-1.0.14/jfreechart-1.0.14/lib/servlet.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Compressed/jfreechart-1.0.14/jfreechart-1.0.14/lib/swtgraphics2d.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

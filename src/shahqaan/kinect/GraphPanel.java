@@ -10,6 +10,13 @@ package shahqaan.kinect;
 import java.awt.*;
 import javax.swing.*;
 
+import org.jfree.chart.*;
+import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.CombinedDomainCategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.DefaultCategoryDataset;
+
 public class GraphPanel extends JPanel {
     private Font msgFont;
     private ExtendedSkeletons skels;   // the users' skeletons
@@ -17,11 +24,38 @@ public class GraphPanel extends JPanel {
     public GraphPanel(ExtendedSkeletons skeleton){
         // Set JPanel properties
         setBackground(Color.BLACK);
+        // Set border color
+        setBorder(BorderFactory.createLineBorder(Color.GREEN));
 
         // Configure variables
         this.skels = skeleton;
 
         msgFont = new Font("SansSerif", Font.BOLD, 24);
+
+
+        /*
+        // creating chart
+        DefaultCategoryDataset ds = new DefaultCategoryDataset();
+        ds.addValue(100, "A", "A");
+        ds.addValue(200, "A", "B");
+        ds.addValue(400, "A", "C");
+        ds.addValue(500, "A", "D");
+        ds.addValue(2000, "A", "E");
+
+
+        JFreeChart bc = ChartFactory.createBarChart("My Bar Chart", "Things", "Counts",  ds, PlotOrientation.VERTICAL, true, false, false);
+
+        CategoryPlot mainPlot = bc.getCategoryPlot();
+
+        NumberAxis mainAxis = (NumberAxis) mainPlot.getRangeAxis();
+        mainAxis.setLowerBound(0);
+        mainAxis.setUpperBound(600);
+        JFreeChart combinedChart = new JFreeChart("Test", mainPlot);
+        combinedChart.setAntiAlias(true);
+
+        StandardChartTheme.createDarknessTheme().apply(combinedChart);
+        ChartPanel cp = new ChartPanel(combinedChart);
+        this.add(cp);     */
     }
 
     /*

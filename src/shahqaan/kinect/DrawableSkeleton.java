@@ -16,32 +16,41 @@ import org.OpenNI.SkeletonJointPosition;
  */
 public class DrawableSkeleton implements AbstractDrawable {
 
+    private boolean isDrawing = true;
+    public void start() {
+        this.isDrawing = true;
+    }
+    public void stop() {
+        this.isDrawing = false;
+    }
     @Override
     public void drawSkeleton(Graphics2D g2d,
-            HashMap<SkeletonJoint, SkeletonJointPosition> skel, Skeletons skeletons) {
-        drawLine(g2d, skel, SkeletonJoint.HEAD, SkeletonJoint.NECK, skeletons);
+                             HashMap<SkeletonJoint, SkeletonJointPosition> skel, Skeletons skeletons) {
+        if (this.isDrawing) {
+            drawLine(g2d, skel, SkeletonJoint.HEAD, SkeletonJoint.NECK, skeletons);
 
-        drawLine(g2d, skel, SkeletonJoint.LEFT_SHOULDER, SkeletonJoint.TORSO, skeletons);
-        drawLine(g2d, skel, SkeletonJoint.RIGHT_SHOULDER, SkeletonJoint.TORSO, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.LEFT_SHOULDER, SkeletonJoint.TORSO, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.RIGHT_SHOULDER, SkeletonJoint.TORSO, skeletons);
 
-        drawLine(g2d, skel, SkeletonJoint.NECK, SkeletonJoint.LEFT_SHOULDER, skeletons);
-        drawLine(g2d, skel, SkeletonJoint.LEFT_SHOULDER, SkeletonJoint.LEFT_ELBOW, skeletons);
-        drawLine(g2d, skel, SkeletonJoint.LEFT_ELBOW, SkeletonJoint.LEFT_HAND, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.NECK, SkeletonJoint.LEFT_SHOULDER, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.LEFT_SHOULDER, SkeletonJoint.LEFT_ELBOW, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.LEFT_ELBOW, SkeletonJoint.LEFT_HAND, skeletons);
 
-        drawLine(g2d, skel, SkeletonJoint.NECK, SkeletonJoint.RIGHT_SHOULDER, skeletons);
-        drawLine(g2d, skel, SkeletonJoint.RIGHT_SHOULDER, SkeletonJoint.RIGHT_ELBOW, skeletons);
-        drawLine(g2d, skel, SkeletonJoint.RIGHT_ELBOW, SkeletonJoint.RIGHT_HAND, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.NECK, SkeletonJoint.RIGHT_SHOULDER, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.RIGHT_SHOULDER, SkeletonJoint.RIGHT_ELBOW, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.RIGHT_ELBOW, SkeletonJoint.RIGHT_HAND, skeletons);
 
-        drawLine(g2d, skel, SkeletonJoint.LEFT_HIP, SkeletonJoint.TORSO, skeletons);
-        drawLine(g2d, skel, SkeletonJoint.RIGHT_HIP, SkeletonJoint.TORSO, skeletons);
-        drawLine(g2d, skel, SkeletonJoint.LEFT_HIP, SkeletonJoint.RIGHT_HIP, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.LEFT_HIP, SkeletonJoint.TORSO, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.RIGHT_HIP, SkeletonJoint.TORSO, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.LEFT_HIP, SkeletonJoint.RIGHT_HIP, skeletons);
 
-        drawLine(g2d, skel, SkeletonJoint.LEFT_HIP, SkeletonJoint.LEFT_KNEE, skeletons);
-        drawLine(g2d, skel, SkeletonJoint.LEFT_KNEE, SkeletonJoint.LEFT_FOOT, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.LEFT_HIP, SkeletonJoint.LEFT_KNEE, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.LEFT_KNEE, SkeletonJoint.LEFT_FOOT, skeletons);
 
-        drawLine(g2d, skel, SkeletonJoint.RIGHT_HIP, SkeletonJoint.RIGHT_KNEE, skeletons);
-        drawLine(g2d, skel, SkeletonJoint.RIGHT_KNEE, SkeletonJoint.RIGHT_FOOT, skeletons);
-    }  // end of drawSkeleton()
+            drawLine(g2d, skel, SkeletonJoint.RIGHT_HIP, SkeletonJoint.RIGHT_KNEE, skeletons);
+            drawLine(g2d, skel, SkeletonJoint.RIGHT_KNEE, SkeletonJoint.RIGHT_FOOT, skeletons);
+        }
+    }
 
     @Override
     public void drawLine(Graphics2D g2d,

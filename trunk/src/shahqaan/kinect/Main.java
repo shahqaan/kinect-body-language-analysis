@@ -49,6 +49,7 @@ public class Main extends JFrame {
     public Main() {
         super("User Tracker");
 
+        /*
         // Apply UI Theme
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -60,7 +61,7 @@ public class Main extends JFrame {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         } catch (UnsupportedLookAndFeelException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
+        } */
 
         // create skeleton helper objects
         this.drawableSkeleton = new DrawableSkeleton();

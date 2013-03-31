@@ -43,6 +43,9 @@ public class SkeletonPanel extends JPanel implements Runnable {
         // Set JPanel properties
         setBackground(Color.BLACK);
 
+        // Set border color
+        setBorder(BorderFactory.createLineBorder(Color.GREEN));
+
         // Configure variables
         this.loggable = loggableSkeleton;
         this.skels = skeleton;

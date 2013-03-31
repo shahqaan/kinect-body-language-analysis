@@ -28,10 +28,10 @@
     </knees>
     <shoulders>
         <forward>
-            <max>33</max>
-            <min>11</min>
+            <max>10</max>
+            <min>-10</min>
         </forward>
-        <upward>
+        <upward> <!-- y of shoulders from neck-->
             <max>10</max>
             <min>-10</min>
         </upward>

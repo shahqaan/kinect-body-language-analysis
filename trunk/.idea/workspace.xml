@@ -5,8 +5,8 @@
     <ignored path="FYP - Body Language Analysis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Main.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364127355179" ignored="false" />
-    <file path="/ExtendedSkeletons.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364672973551" ignored="false" />
-    <file path="/TrackableSkeleton.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364662045771" ignored="false" />
+    <file path="/ExtendedSkeletons.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364730860047" ignored="false" />
+    <file path="/TrackableSkeleton.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364748303297" ignored="false" />
     <file path="/BodyPartParameter.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364673208818" ignored="false" />
     <file path="/BodyPart.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364638544464" ignored="false" />
     <file path="/SkeletonTrackerTest.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364664142945" ignored="false" />
@@ -14,12 +14,16 @@
     <file path="/Parts.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364638494276" ignored="false" />
     <file path="/Emotion.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364639140724" ignored="false" />
     <file path="/Emotions.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364639888407" ignored="false" />
-    <file path="/Parts Values Configurations.xml" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364647037140" ignored="false" />
-    <file path="/Parts Configurations.xml" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364647112015" ignored="false" />
-    <file path="/ControlPanel.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364663723224" ignored="false" />
+    <file path="/Parts Values Configurations.xml" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364746940425" ignored="false" />
+    <file path="/Parts Configurations.xml" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364746854053" ignored="false" />
+    <file path="/ControlPanel.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364745722473" ignored="false" />
     <file path="/MainPanel.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364655487639" ignored="false" />
-    <file path="/SkeletonPanel.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364672058816" ignored="false" />
-    <file path="/GraphPanel.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364673026933" ignored="false" />
+    <file path="/SkeletonPanel.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364730910866" ignored="false" />
+    <file path="/GraphPanel.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364745629262" ignored="false" />
+    <file path="/fragment.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364730328867" ignored="false" />
+    <file path="/AbstractTrackable.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364732172448" ignored="false" />
+    <file path="/AbstractDrawable.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364732192134" ignored="false" />
+    <file path="/DrawableSkeleton.java" changelist="68365c75-d28c-4c1d-b30f-a2fc07928d38" time="1364745694290" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +38,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -68,7 +73,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -80,13 +84,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ControlPanel.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java">
+      <file leaf-file-name="TrackableSkeleton.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/TrackableSkeleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.7948718">
+            <state line="458" column="61" selection-start="14547" selection-end="14547" vertical-scroll-proportion="0.31290743">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="docComment;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#buildPartsFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#buildPartsValuesFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#buildEmotionsFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="docComment;method#findAngle#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#findAngle#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#xFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#yFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#zFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="method#testRightKnee#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="e#7537#7590#0" expanded="false" />
+                <element signature="method#testRightArm#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="e#9461#9514#0" expanded="false" />
+                <element signature="method#testLeftArm#0;class#TrackableSkeleton#0" expanded="false" />
+                <element signature="e#12066#12096#0" expanded="false" />
+                <element signature="method#testChest#0;class#TrackableSkeleton#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Emotions Configurations.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Emotions Configurations.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="78" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parts Configurations.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parts Configurations.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="20" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parts Values Configurations.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parts Values Configurations.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,22 +148,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/shahqaan/kinect/Emotions.java" />
-        <option value="$PROJECT_DIR$/../../Documentation/Miscellaneous Documents/Documents/Project XML Configurations/Emotions Configurations.xml" />
-        <option value="$PROJECT_DIR$/../../Documentation/Miscellaneous Documents/Documents/Project XML Configurations/Parts Values Configurations .xml" />
-        <option value="$PROJECT_DIR$/Parts Values Configurations.xml" />
-        <option value="$PROJECT_DIR$/Parts Configurations.xml" />
         <option value="$PROJECT_DIR$/Emotions Configurations.xml" />
         <option value="$PROJECT_DIR$/src/shahqaan/kinect/MainPanel.java" />
         <option value="$PROJECT_DIR$/src/shahqaan/kinect/SkeletonTrackerTest.java" />
-        <option value="$PROJECT_DIR$/src/shahqaan/kinect/TrackableSkeleton.java" />
-        <option value="$PROJECT_DIR$/src/shahqaan/kinect/Main.java" />
-        <option value="$PROJECT_DIR$/src/shahqaan/kinect/SkeletonPanel.java" />
-        <option value="$PROJECT_DIR$/src/shahqaan/kinect/GraphPanel.java" />
         <option value="$PROJECT_DIR$/src/shahqaan/kinect/BodyPart.java" />
         <option value="$PROJECT_DIR$/src/shahqaan/kinect/BodyPartParameter.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/Main.java" />
         <option value="$PROJECT_DIR$/src/shahqaan/kinect/ExtendedSkeletons.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/SkeletonPanel.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/AbstractTrackable.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/AbstractDrawable.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/GraphPanel.java" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/DrawableSkeleton.java" />
         <option value="$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java" />
+        <option value="$PROJECT_DIR$/Parts Configurations.xml" />
+        <option value="$PROJECT_DIR$/Parts Values Configurations.xml" />
+        <option value="$PROJECT_DIR$/src/shahqaan/kinect/TrackableSkeleton.java" />
       </list>
     </option>
   </component>
@@ -168,8 +215,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,40 +233,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kinect-body-language-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kinect-body-language-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kinect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Parts Values Configurations.xml" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -236,29 +266,12 @@
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="FYP - Body Language Analysis" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="shahqaan.kinect.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -289,9 +302,8 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -301,6 +313,11 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -330,15 +347,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287841" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46526054" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287841" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32754344" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -346,10 +362,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17152777" sideWeight="0.7741935" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22580644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17152777" sideWeight="0.7741935" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22580644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287841" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -416,132 +433,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Documentation/Miscellaneous Documents/Documents/Project XML Configurations/Parts Configurations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Emotions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="48" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Emotion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="51" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Documentation/Miscellaneous Documents/Documents/Project XML Configurations/Emotions Configurations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="27" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.07692308" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parts Values Configurations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="20" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Emotions Configurations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="27" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Parts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="15" selection-start="1263" selection-end="1263" vertical-scroll-proportion="1.4102564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parts Configurations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="68" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/TrackableSkeleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="67" selection-start="2757" selection-end="2757" vertical-scroll-proportion="0.4784876">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="method#buildPartsFromXml#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="method#buildPartsValuesFromXml#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="method#buildEmotionsFromXml#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="docComment;method#findAngle#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="method#findAngle#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="method#xFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="method#yFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="method#zFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="method#testRightKnee#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="e#7203#7256#0" expanded="false" />
-            <element signature="method#testRightArm#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="e#9127#9180#0" expanded="false" />
-            <element signature="method#testLeftArm#0;class#TrackableSkeleton#0" expanded="false" />
-            <element signature="e#11732#11762#0" expanded="false" />
-            <element signature="method#testChest#0;class#TrackableSkeleton#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/SkeletonPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="412" selection-end="412" vertical-scroll-proportion="0.3794872">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#SkeletonPanel#0;class#SkeletonPanel#0" expanded="false" />
-            <element signature="method#getPreferredSize#0;class#SkeletonPanel#0" expanded="false" />
-            <element signature="method#closeDown#0;class#SkeletonPanel#0" expanded="false" />
-            <element signature="method#run#0;class#SkeletonPanel#0" expanded="false" />
-            <element signature="e#1744#1760#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#SkeletonPanel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/GraphPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="4" selection-start="606" selection-end="606" vertical-scroll-proportion="0.61538464">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/BodyPartParameter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.102564104">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ExtendedSkeletons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="203" selection-end="203" vertical-scroll-proportion="0.33333334">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5161#5344#0" expanded="true" />
-            <element signature="e#5312#5313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="7" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.89358974">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="class#3461:3622" expanded="false" />
-            <element signature="method#windowClosing#0;class#3461:3622" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -555,11 +451,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.7948718">
+        <state line="51" column="79" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ExtendedSkeletons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="44" selection-start="2218" selection-end="2218" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/LoggableSkeleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="56" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/AbstractLoggable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/AbstractTrackable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="23" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/AbstractDrawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="23" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/SkeletonPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="32" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/GraphPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="67" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/DrawableSkeleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="53" selection-start="443" selection-end="443" vertical-scroll-proportion="0.30769232" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Emotions Configurations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="78" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parts Configurations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="20" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/ControlPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="59" selection-start="4042" selection-end="4042" vertical-scroll-proportion="0.64102566">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parts Values Configurations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shahqaan/kinect/TrackableSkeleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="458" column="61" selection-start="14547" selection-end="14547" vertical-scroll-proportion="0.31290743">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#buildPartsFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#buildPartsValuesFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#buildEmotionsFromXml#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="docComment;method#findAngle#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#findAngle#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#xFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#yFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#zFromTorso#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="method#testRightKnee#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="e#7537#7590#0" expanded="false" />
+            <element signature="method#testRightArm#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="e#9461#9514#0" expanded="false" />
+            <element signature="method#testLeftArm#0;class#TrackableSkeleton#0" expanded="false" />
+            <element signature="e#12066#12096#0" expanded="false" />
+            <element signature="method#testChest#0;class#TrackableSkeleton#0" expanded="false" />
           </folding>
         </state>
       </provider>

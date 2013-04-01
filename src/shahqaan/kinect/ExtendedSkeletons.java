@@ -5,11 +5,14 @@ package shahqaan.kinect;
  * @author Shahqaan Qasim
  */
 
+import org.OpenNI.SkeletonJoint;
+import org.OpenNI.SkeletonJointPosition;
+import org.OpenNI.StatusException;
+
 import java.awt.*;
-import java.util.*;
+import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.OpenNI.*;
 
 public class ExtendedSkeletons extends Skeletons {
 
@@ -163,7 +166,7 @@ public class ExtendedSkeletons extends Skeletons {
     protected void updateJoint(HashMap<SkeletonJoint, SkeletonJointPosition> skel,
             int userID, SkeletonJoint joint) {
         Thread t = null;
-        if (loggable != null) { 
+        if (loggable != null && loggable.isLogging()) {
             final HashMap<SkeletonJoint, SkeletonJointPosition> currentSkel = new HashMap<>(skel);
             final ExtendedSkeletons context = this;
             t = new Thread(new Runnable() {
@@ -177,7 +180,7 @@ public class ExtendedSkeletons extends Skeletons {
         }    
         super.updateJoint(skel, userID, joint);
         this.tracker.track(this, skel);
-        if (loggable != null) {
+        if (loggable != null && loggable.isLogging()) {
             try {
                 if (t != null) {
                     t.join();

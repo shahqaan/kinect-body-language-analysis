@@ -8,8 +8,8 @@ package shahqaan.kinect;
  *
  * @author Shahqaan Qasim
  */
-import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * Extends JPanel
@@ -44,7 +44,7 @@ public class SkeletonPanel extends JPanel implements Runnable {
         setBackground(Color.BLACK);
 
         // Set border color
-        setBorder(BorderFactory.createLineBorder(Color.GREEN));
+        setBorder(BorderFactory.createLineBorder(Color.lightGray));
 
         // Configure variables
         this.loggable = loggableSkeleton;

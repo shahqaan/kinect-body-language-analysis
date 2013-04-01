@@ -1,10 +1,10 @@
 package shahqaan.kinect;
 
-import java.awt.*;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.util.ArrayList;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class ControlPanel extends JPanel implements ActionListener {
     private Font msgFont;
@@ -34,7 +34,7 @@ public class ControlPanel extends JPanel implements ActionListener {
         // Set JPanel properties
         setBackground(Color.BLACK);
         // Set border color
-        setBorder(BorderFactory.createLineBorder(Color.GREEN));
+        setBorder(BorderFactory.createLineBorder(Color.lightGray));
 
         // Configure variables
         this.skels = skeleton;
@@ -83,7 +83,6 @@ public class ControlPanel extends JPanel implements ActionListener {
             if (drawingCheckbox.isSelected()) {
                 drawable.start();
                 this.setStatus("Drawing");
-                ControlPanel.MESSAGE = "Drawing";
             }
             else {
                 drawable.stop();
@@ -123,11 +122,10 @@ public class ControlPanel extends JPanel implements ActionListener {
         }
         g2d.drawString(printStatus, 30, 415);
 
-
         // print message
         if (ControlPanel.MESSAGE != null) {
             g2d.setFont(new Font("SansSerif", Font.BOLD, 75));
-            g2d.setColor(Color.RED);
+            g2d.setColor(new Color(159, 4, 16, 255));
             g2d.drawString(ControlPanel.MESSAGE, 300, 413);
         }
 

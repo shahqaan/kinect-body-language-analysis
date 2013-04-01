@@ -9,9 +9,10 @@ package shahqaan.kinect;
  *
  * @author Shahqaan Qasim
  */
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 /**
  * Initializes
@@ -49,20 +50,6 @@ public class Main extends JFrame {
     public Main() {
         super("User Tracker");
 
-        /*
-        // Apply UI Theme
-        try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        } catch (InstantiationException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        } catch (UnsupportedLookAndFeelException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        } */
-
         // create skeleton helper objects
         this.drawableSkeleton = new DrawableSkeleton();
         this.loggableSkeleton = new LoggableSkeleton();
@@ -83,7 +70,7 @@ public class Main extends JFrame {
         this.mainPanel.setLayout(new GridLayout(2, 1));
 
         this.subPanel = new JPanel();
-        this.graphPanel = new GraphPanel(this.skeleton);
+        this.graphPanel = new GraphPanel(this.skeleton, this.trackableSkeleton);
 
         this.skeletonPanel = new SkeletonPanel(
                 this.skeleton,
@@ -112,11 +99,11 @@ public class Main extends JFrame {
         // add mainPanel to container
         c.add(this.mainPanel);
 
-
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
                 skeletonPanel.closeDown();
+                System.exit(0);
             }
         });
 

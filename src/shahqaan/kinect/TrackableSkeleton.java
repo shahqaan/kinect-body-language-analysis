@@ -4,14 +4,15 @@
  */
 package shahqaan.kinect;
 
-import java.util.HashMap;
 import org.OpenNI.Point3D;
 import org.OpenNI.SkeletonJoint;
 import org.OpenNI.SkeletonJointPosition;
-import javax.xml.bind.Unmarshaller;
-import java.io.File;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+import java.io.File;
+import java.util.HashMap;
 
 /**
  *
@@ -27,14 +28,14 @@ public class TrackableSkeleton implements AbstractTrackable {
     private final static String PARTS_VALUES_FILE = CONFIGURATION_DIRECTORY_PATH + "Parts Values Configurations.xml";
     private final static String EMOTIONS_FILE = CONFIGURATION_DIRECTORY_PATH + "Emotions Configurations.xml";
 
-    private Parts parts = null;
-    private Parts partsValues = null;
-    private Emotions emotions = null;
+    public static Parts parts = null;
+    public static Parts partsValues = null;
+    public static Emotions emotions = null;
 
-    private HashMap<String, Float> headValues = null;
-    private HashMap<String, Float> armsValues = null;
-    private HashMap<String, Float> kneesValues = null;
-    private HashMap<String, Float> shouldersValues = null;
+    public static HashMap<String, Float> headValues = new HashMap<>();
+    public static HashMap<String, Float> armsValues = new HashMap<>();
+    public static HashMap<String, Float> kneesValues = new HashMap<>();
+    public static HashMap<String, Float> shouldersValues = new HashMap<>();
 
     /**
      * Variables for arm and hands
@@ -75,14 +76,28 @@ public class TrackableSkeleton implements AbstractTrackable {
         this.buildPartsFromXml(TrackableSkeleton.PARTS_FILE);
         this.buildPartsValuesFromXml(TrackableSkeleton.PARTS_VALUES_FILE);
         this.buildEmotionsFromXml(TrackableSkeleton.EMOTIONS_FILE);
-    }
 
+        TrackableSkeleton.armsValues.put("forward", 0f);
+        TrackableSkeleton.armsValues.put("openness", 0f);
+        TrackableSkeleton.armsValues.put("upward", 0f);
+
+        TrackableSkeleton.headValues.put("forward", 0f);
+
+        TrackableSkeleton.kneesValues.put("straight", 0f);
+
+        TrackableSkeleton.shouldersValues.put("forward", 0f);
+        TrackableSkeleton.shouldersValues.put("upward", 0f);
+
+    }
+    @Override
     public void start() {
         this.isTracking = true;
     }
+    @Override
     public void stop() {
         this.isTracking = false;
     }
+    @Override
     public boolean isTracking() {
         return this.isTracking;
     }
@@ -261,11 +276,14 @@ public class TrackableSkeleton implements AbstractTrackable {
             // float zFromTorso = this.zFromTorso(skeletons, skel, r);
             
             float zFromTorso = this.zFromTorso(skeletons, skel, z);
-            if (zFromTorso < this.kneeBendThreshold) {
-            }
-            else {
-            }
-            
+
+            int actualSpan = this.partsValues.getKnees().getStraight().getSpan();
+            int mappedSpan = this.parts.getKnees().getStraight().getSpan();
+
+            float mappedPositionStraight = (zFromTorso / (float) actualSpan) * (float) mappedSpan;
+
+            this.kneesValues.put("straight", mappedPositionStraight);
+
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(1);
@@ -273,7 +291,13 @@ public class TrackableSkeleton implements AbstractTrackable {
         
         
     }
-    
+
+    /**
+     * TODO implement "upward" check
+     *
+     * @param skeletons
+     * @param skel
+     */
     private void testRightArm(Skeletons skeletons, HashMap<SkeletonJoint, SkeletonJointPosition> skel) {
         float x = 0, y = 0, z = 0;
         float a = 0, b = 0, c = 0;
@@ -305,40 +329,32 @@ public class TrackableSkeleton implements AbstractTrackable {
                 q = point.getY();
                 r = point.getZ();
             }
-            
+
+
+            // Determine openness
+
             // Angle will tell whether the arm is straight or not
             // double angle = this.findAngle(x, y, z, a, b, c, p, q, r);
-           
+
             // since it's a right hand, more positive value means
             // it is extending outwards
             // and more negative value means it is crossed inwards
             float xFromTorso = this.xFromTorso(skeletons, skel, p);
-            
+            int actualSpan = (this.partsValues.getArms().getOpenness().getSpan());
+            int mappedSpan = (this.parts.getArms().getOpenness().getSpan());
+            float mappedPositionOpenness = (xFromTorso / (float) actualSpan) * (float) mappedSpan;
+
+            // Determine forward
+
             // if negative then arm is forward
             float zFromTorso = this.zFromTorso(skeletons, skel, r);
-            
-            
-            // Check if arm is extended
-            if (xFromTorso > this.armFullExtension) {
-            }
-            else {
-                
-                // check if arm is crossed
-                if (xFromTorso < 0.0) {
-                }
-                else {
+            actualSpan = (this.partsValues.getArms().getForward().getSpan());
+            mappedSpan = (this.parts.getArms().getForward().getSpan());
+            float mappedPositionForward = (zFromTorso / (float) actualSpan) * (float) mappedSpan;
 
-                    // if not extended, check if they are forward
-                    if (zFromTorso < this.armForwardThreshold) {
+            this.armsValues.put("forward", mappedPositionForward);
+            this.armsValues.put("openness", mappedPositionOpenness);
 
-                    }
-                    else {
-
-                    }
-                }
-            }
-
-        
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(1);
@@ -396,7 +412,7 @@ public class TrackableSkeleton implements AbstractTrackable {
         }        
         
     }
-  
+
     private void testChest(Skeletons skeletons, HashMap<SkeletonJoint, SkeletonJointPosition> skel) {
         float x = 0, y = 0, z = 0;
         Point3D point = skeletons.getJointPos(skel, SkeletonJoint.NECK);
@@ -419,8 +435,6 @@ public class TrackableSkeleton implements AbstractTrackable {
         }
     }
 
-
-
     private void testShoulders(Skeletons skeletons, HashMap<SkeletonJoint, SkeletonJointPosition> skel) {
         float x = 0, y = 0, z = 0;
         Point3D point = skeletons.getJointPos(skel, SkeletonJoint.RIGHT_SHOULDER);
@@ -433,19 +447,18 @@ public class TrackableSkeleton implements AbstractTrackable {
         float shoulderYFromNeck = this.yFromNeck(skeletons, skel, y);
         float shoulderZFromNeck = this.zFromNeck(skeletons, skel, z);
 
+        // float shoulderYFromNeck = this.yFromTorso(skeletons, skel, y);
+        // float shoulderZFromNeck = this.zFromTorso(skeletons, skel, z);
+
         int actualSpan = this.partsValues.getShoulders().getUpward().getSpan();
         int mappedSpan = this.parts.getShoulders().getUpward().getSpan();
 
-        ControlPanel.MESSAGE = "SF: " + shoulderZFromNeck;
+
 
         float mappedPositionY = (shoulderYFromNeck / (float) actualSpan) * (float) mappedSpan;
         float mappedPositionZ = (shoulderZFromNeck / (float) actualSpan) * (float) mappedSpan;
 
-        if (this.shouldersValues == null) {
-            this.shouldersValues = new HashMap<>();
-        }
-
-        // ControlPanel.MESSAGE = "SF: " + mappedPositionZ;
+        ControlPanel.MESSAGE = "SF: " + shoulderYFromNeck;
 
         this.shouldersValues.put("upward", mappedPositionY);
         this.shouldersValues.put("forward", mappedPositionZ);
@@ -466,10 +479,6 @@ public class TrackableSkeleton implements AbstractTrackable {
 
         float mappedPosition = (headFromTorso / (float) actualSpan) * (float) mappedSpan;
 
-        if (this.headValues == null) { // create an instance if it doesn't already exist
-            this.headValues = new HashMap<>();
-        }
-
         this.headValues.put("forward", mappedPosition);
     }
 
@@ -485,10 +494,10 @@ public class TrackableSkeleton implements AbstractTrackable {
     @Override
     public void track(Skeletons skeletons, HashMap<SkeletonJoint, SkeletonJointPosition> skel) {
         if (this.isTracking) {
-            // this.testRightArm(skeletons, skel);
-            // this.testRightKnee(skeletons, skel);
+            this.testRightArm(skeletons, skel);
+            this.testRightKnee(skeletons, skel);
             // this.testChest(skeletons, skel);
-            // this.testHead(skeletons, skel);
+            this.testHead(skeletons, skel);
             this.testShoulders(skeletons, skel);
             this.determineEmotions();
          }

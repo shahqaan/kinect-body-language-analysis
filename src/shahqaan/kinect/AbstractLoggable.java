@@ -4,15 +4,17 @@
  */
 package shahqaan.kinect;
 
-import java.util.HashMap;
 import org.OpenNI.SkeletonJoint;
 import org.OpenNI.SkeletonJointPosition;
+
+import java.util.HashMap;
 
 /**
  *
  * @author Shahqaan Qasim
  */
 public interface AbstractLoggable {
+    public boolean isLogging();
     /**
      *
      */

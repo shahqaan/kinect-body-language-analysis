@@ -4,16 +4,16 @@
         <parts>
             <arms>
                 <forward>
-                    <max>99</max>
-                    <min>34</min>
+                    <max>0</max>
+                    <min>-5</min>
                 </forward>
                 <openness>
-                    <max>43</max>
-                    <min>33</min>
+                    <max>5</max>
+                    <min>0</min>
                 </openness>
                 <upward>
-                    <max>23</max>
-                    <min>53</min>
+                    <max>10</max>
+                    <min>3</min>
                 </upward>
             </arms>
             <head>
@@ -30,8 +30,8 @@
             </knees>
             <shoulders>
                 <forward>
-                    <max>33</max>
-                    <min>11</min>
+                    <max>7</max>
+                    <min>-7</min>
                 </forward>
                 <upward>
                     <max>10</max>

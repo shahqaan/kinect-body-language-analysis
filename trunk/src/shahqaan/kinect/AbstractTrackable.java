@@ -4,9 +4,10 @@
  */
 package shahqaan.kinect;
 
-import java.util.HashMap;
 import org.OpenNI.SkeletonJoint;
 import org.OpenNI.SkeletonJointPosition;
+
+import java.util.HashMap;
 
 /**
  *
@@ -16,6 +17,7 @@ public interface AbstractTrackable {
 
     public void start();
     public void stop();
+    public boolean isTracking();
     /**
      * 
      * @param skeletons

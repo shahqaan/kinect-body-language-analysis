@@ -4,20 +4,17 @@
  */
 package shahqaan.kinect;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.PrintStream;
+import org.OpenNI.Point3D;
+import org.OpenNI.SkeletonJoint;
+import org.OpenNI.SkeletonJointPosition;
+
+import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.OpenNI.Point3D;
-import org.OpenNI.SkeletonJoint;
-import org.OpenNI.SkeletonJointPosition;
 
 /**
  *
@@ -29,6 +26,10 @@ public class LoggableSkeleton implements AbstractLoggable {
     private PrintStream p; // declare a print stream object
     public LoggableSkeleton() {
         isLogging = false;
+    }
+    @Override
+    public boolean isLogging() {
+        return isLogging;
     }
     @Override
     public void start() {

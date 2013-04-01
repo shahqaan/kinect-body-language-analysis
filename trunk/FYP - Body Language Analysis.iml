@@ -9,6 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="org.OpenNI" level="project" />
     <orderEntry type="library" name="com.primesense.NITE" level="project" />
+    <orderEntry type="library" name="jcommon-1.0.17" level="project" />
   </component>
 </module>
 

@@ -2,8 +2,8 @@
 <parts>
     <arms>
         <forward>
-            <max>99</max>
-            <min>34</min>
+            <max>10</max>
+            <min>-10</min>
         </forward>
         <openness>
             <max>43</max>

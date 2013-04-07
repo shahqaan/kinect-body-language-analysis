@@ -5,7 +5,7 @@
             <max>-550</max>
             <min>550</min>
         </forward>
-        <openness>
+        <openness> <!--x from torso-->
             <max>43</max>
             <min>33</min>
         </openness>

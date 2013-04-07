@@ -422,6 +422,7 @@ public class TrackableSkeleton implements AbstractTrackable {
             z = point.getZ();
         }
         float zFromTorso = this.zFromTorso(skeletons, skel, 0);
+        ControlPanel.MESSAGE = " " + zFromTorso;
         if (zFromTorso < this.chestBendThreshold) {
 
         }
@@ -494,11 +495,11 @@ public class TrackableSkeleton implements AbstractTrackable {
     @Override
     public void track(Skeletons skeletons, HashMap<SkeletonJoint, SkeletonJointPosition> skel) {
         if (this.isTracking) {
-            this.testRightArm(skeletons, skel);
-            this.testRightKnee(skeletons, skel);
-            // this.testChest(skeletons, skel);
-            this.testHead(skeletons, skel);
-            this.testShoulders(skeletons, skel);
+            //this.testRightArm(skeletons, skel);
+            //this.testRightKnee(skeletons, skel);
+            this.testChest(skeletons, skel);
+            //this.testHead(skeletons, skel);
+            //this.testShoulders(skeletons, skel);
             this.determineEmotions();
          }
     }

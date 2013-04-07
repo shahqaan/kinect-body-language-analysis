@@ -90,7 +90,8 @@ public class SkeletonPanel extends JPanel implements Runnable {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
         g2d.setFont(msgFont);
-       
+        g2d.setStroke(new BasicStroke(4.5f));
+
         skels.draw(g2d);
         
         /**

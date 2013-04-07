@@ -6,12 +6,12 @@
             <min>-10</min>
         </forward>
         <openness>
-            <max>43</max>
-            <min>33</min>
+            <max>10</max>
+            <min>-10</min>
         </openness>
         <upward>
-            <max>23</max>
-            <min>53</min>
+            <max>10</max>
+            <min>-10</min>
         </upward>
     </arms>
     <head>

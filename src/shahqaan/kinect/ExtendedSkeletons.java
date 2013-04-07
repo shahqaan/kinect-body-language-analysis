@@ -90,7 +90,7 @@ public class ExtendedSkeletons extends Skeletons {
             if (true) {
                 int[] userIDs = userGen.getUsers();
                 for (int i = 0; i < userIDs.length; ++i) {
-                    g2d.setColor(Color.GREEN);
+                    g2d.setColor(new Color(154, 225, 37));
                     if (skelCap.isSkeletonCalibrating(userIDs[i])) {
                         // test to avoid occasional crashes with isSkeletonTracking()
                     }

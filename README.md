@@ -6,6 +6,53 @@ Since the release of Kinect, there have been many efforts from Microsoft, as wel
 
 The second part of the project focuses on developing an application which demonstrates the full potential of this framework. We created a desktop application which will create real-time music and art based on the user performing intentionally or randomly. The music scale and saturation of the colors used is based upon the emotions of the performer.
 
+## Setup
+
+### OpenNI
+
+#### Installing OpenNI and Kinect Driver on Windows 7 (x86) 
+
+1.  Go to [OpenNI](http://openni.org/Downloads/OpenNIModules.aspx)
+
+1.  Select OpenNI Packages
+2.  Select Stable
+3.  Select PrimeSense Package Stable Build for Windows x86 Development Edition
+
+1.  While installing, select OpenNI and NITE middleware. DO NOT check PrimeSense hardware as that driver is not for Microsoft Kinect 
+2.  Download Kinect driver from [Kinect](https://github.com/avin2/SensorKinect) (make sure that neither Microsoft’s nor any other driver for Kinect is installed on your computer) and install it.
+3.  To run the samples included with NITE, copy all .xml files from “[PrimeSense root directory]/NITE/Data” to “[PrimeSense root directory]/SensorKinect/Data”
+
+#### Configuring OpenNI Development in Visual Studio 2010
+
+1.  Create a new or open an existing Visual Studio 2010 project
+2.  Open project properties
+3.  Go to <span class="c9 c12">C/C++ -> General -> Additional Include Directories and add “[OpenNI root directory]/Include”
+4.  Go to <span class="c9 c12">Linker -> General -> Additional Library Directories and add “[OpenNI root directory]/Lib”
+5.  Go to <span class="c9 c12">Linker -> Input -> Additional Dependencies and add <span class="c9 c12">OpenNI.lib
+6.  Your code should include <span class="c9 c12">XnOpenNI.h if you are using C interface, or <span class="c9 c12">XnCppWrapper.h if you are using C++ interface 
+7.  Optionally, you can use the namespace “xn” or you can reference objects using scope operator (For example, “xn::Context context”)
+
+#### Configuring OpenNI Development in Visual Studio 2012
+
+Installation and configuration in Visual Studio 2012 is exactly the same as Visual Studio 2010\. But OpenNI doesn’t let you use their library in compiler version greater than VS 2010\. But it can be overridden using the following steps:
+
+1.  Within the OpenNI libraries directory, locate the file XnPlatform.h
+2.  At the top of the file you will find the code “if defined(_WIN32). Beneath this you will find another condition which checks the compiler version
+3.  Comment out that piece of code and you will be able to compile the project
+
+#### Configuring OpenNI Development in Java IDE’s
+
+1.  Create a new project in Eclipse or Netbeans
+2.  Add “[OpenNI root directory]/Bin/org.OpenNI.jar” and “[NITE root directory]/Bin/com.primesense.NITE.jar” to “additional libraries
+
+## Technologies Used:
+
+1.  Microsoft Windows 7 (x86)
+2.  PrimeSense’s SensorKinect driver for Kinect
+3.  NITE middleware for OpenNI
+4.  OpenNI
+
+
 
 # Introduction
 
@@ -293,52 +340,6 @@ Full body control: lets you have a total immersive, full body video game experie
 Microsoft’s Kinect SDK covers much the same ground as OpenNI. The low-level API gives access to the depth sensor, image sensor, and microphone array, while higher-level features include skeletal tracking, audio processing, and integration with the Windows speech recognition API.
 
 The main area where SDK wins over OpenNI is audio. Other pluses for Microsoft’s Kinect SDK are its extensive documentation and ease of installation on Windows 7\. The main drawback for Microsoft’s SDK is that it only works for Windows 7, not even Windows XP. The SDK is free but limited to non-commercial purposes.
-
-## Setup
-
-### OpenNI
-
-#### Installing OpenNI and Kinect Driver on Windows 7 (x86) 
-
-1.  Go to [OpenNI](http://openni.org/Downloads/OpenNIModules.aspx)
-
-1.  Select OpenNI Packages
-2.  Select Stable
-3.  Select PrimeSense Package Stable Build for Windows x86 Development Edition
-
-1.  While installing, select OpenNI and NITE middleware. DO NOT check PrimeSense hardware as that driver is not for Microsoft Kinect 
-2.  Download Kinect driver from [Kinect](https://github.com/avin2/SensorKinect) (make sure that neither Microsoft’s nor any other driver for Kinect is installed on your computer) and install it.
-3.  To run the samples included with NITE, copy all .xml files from “[PrimeSense root directory]/NITE/Data” to “[PrimeSense root directory]/SensorKinect/Data”
-
-#### Configuring OpenNI Development in Visual Studio 2010
-
-1.  Create a new or open an existing Visual Studio 2010 project
-2.  Open project properties
-3.  Go to <span class="c9 c12">C/C++ -> General -> Additional Include Directories and add “[OpenNI root directory]/Include”
-4.  Go to <span class="c9 c12">Linker -> General -> Additional Library Directories and add “[OpenNI root directory]/Lib”
-5.  Go to <span class="c9 c12">Linker -> Input -> Additional Dependencies and add <span class="c9 c12">OpenNI.lib
-6.  Your code should include <span class="c9 c12">XnOpenNI.h if you are using C interface, or <span class="c9 c12">XnCppWrapper.h if you are using C++ interface 
-7.  Optionally, you can use the namespace “xn” or you can reference objects using scope operator (For example, “xn::Context context”)
-
-#### Configuring OpenNI Development in Visual Studio 2012
-
-Installation and configuration in Visual Studio 2012 is exactly the same as Visual Studio 2010\. But OpenNI doesn’t let you use their library in compiler version greater than VS 2010\. But it can be overridden using the following steps:
-
-1.  Within the OpenNI libraries directory, locate the file XnPlatform.h
-2.  At the top of the file you will find the code “if defined(_WIN32). Beneath this you will find another condition which checks the compiler version
-3.  Comment out that piece of code and you will be able to compile the project
-
-#### Configuring OpenNI Development in Java IDE’s
-
-1.  Create a new project in Eclipse or Netbeans
-2.  Add “[OpenNI root directory]/Bin/org.OpenNI.jar” and “[NITE root directory]/Bin/com.primesense.NITE.jar” to “additional libraries
-
-## Technologies Used:
-
-1.  Microsoft Windows 7 (x86)
-2.  PrimeSense’s SensorKinect driver for Kinect
-3.  NITE middleware for OpenNI
-4.  OpenNI
 
 # Results
 

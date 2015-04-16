@@ -64,420 +64,301 @@ In the experiment conducted, it took them 55 seconds to read an image and search
 
 There are also basic rules available to create color combinations. For example, if we hard code a certain color palette into out program and round-off each color read in the frame to one of those found in the color palette. This can be easily done in real time. While the solution mentioned in the research paper above is optimum, I think we are going to have a problem implementing that solution in real time. <br/>
 
-1.  ## <span>Psychological Analysis of Human Motion</span>
+## Psychological Analysis of Human Motion
 
-1.  ### <span>Affective States</span>
+### Affective States
 
-<span class="c9">Affect is described as feeling or emotion. Affective states refer to the different states of feelings or emotions.</span>
+Affect is described as feeling or emotion. Affective states refer to the different states of feelings or emotions.
 
-1.  ### <span>Difference between Emotion and Mood</span>
+### Difference between Emotion and Mood
 
-<span class="c9">Emotion and mood both are types of affective states but emotion is focused whereas mood is unfocused or diffused.</span>
+Emotion and mood both are types of affective states but emotion is focused whereas mood is unfocused or diffused.
 
-1.  ### <span>Arousal, Valence and Stance</span>
+### Arousal, Valence and Stance
 
-<span class="c9">Arousal is defined as the level of energy a person possesses while displaying a certain emotion. Valence describes how positive or negative the stimuli is (which is causing a certain emotion in a person). Stance describes how approachable the stimuli are. </span>
+Arousal is defined as the level of energy a person possesses while displaying a certain emotion. Valence describes how positive or negative the stimuli is (which is causing a certain emotion in a person). Stance describes how approachable the stimuli are. 
 
-<span class="c9">Together, these three terms form a model of quantitative analysis of emotion depicted by body language. </span>
+Together, these three terms form a model of quantitative analysis of emotion depicted by body language. 
 
-1.  ### <span>Gesture</span>
+### Gesture
 
-<span class="c9">It is a movement of body that contains information.</span>
+It is a movement of body that contains information.
 
-1.  ### <span>GEMEP</span>
+### GEMEP
 
-<span class="c9">The Geneva Multimodal Emotion Portrayals (GEMEP</span><span class="c9 c64">[1]</span><span class="c9">) is a collection of audio and video recordings featuring 10 actors portraying 18 affective states, with different verbal contents and different modes of expression. It was created in Geneva by Klaus Scherer and Tanja Bänziger, in the framework of a project funded by the Swiss National Science Foundation (FNRS 101411-100367) and with support of the European Network of Excellence "Humaine" (IST-2002-2.3.1.6 Multimodal Interfaces, Contract no. 507422). Rating studies and objective behavioral analyses are also currently funded by Project 2 and the Methods module of the Swiss Affective Science Center Grant (FNRS).</span>
+The Geneva Multimodal Emotion Portrayals (GEMEP[1]) is a collection of audio and video recordings featuring 10 actors portraying 18 affective states, with different verbal contents and different modes of expression. It was created in Geneva by Klaus Scherer and Tanja Bänziger, in the framework of a project funded by the Swiss National Science Foundation (FNRS 101411-100367) and with support of the European Network of Excellence "Humaine" (IST-2002-2.3.1.6 Multimodal Interfaces, Contract no. 507422). Rating studies and objective behavioral analyses are also currently funded by Project 2 and the Methods module of the Swiss Affective Science Center Grant (FNRS).
 
-1.  ### <span>Importance of Body Language Analysis</span>
+### Importance of Body Language Analysis
 
-<span class="c9">There has been thorough research on motion analysis from facial recognition. But there has been little or no research on body language analysis. It is known that body expressions are as powerful as facial recognition when it comes to emotion analysis. In any social interactions, body language along with facial features communicates the mood/emotions of the person. </span>
+There has been thorough research on motion analysis from facial recognition. But there has been little or no research on body language analysis. It is known that body expressions are as powerful as facial recognition when it comes to emotion analysis. In any social interactions, body language along with facial features communicates the mood/emotions of the person. 
 
-<span class="c9">In chronic pain rehabilitation, specific movements and postural patterns inform about the emotional conflict experienced by the patients (called “guarding behavior”) which affects their level of ability to relax. If doctors have a way to know that a person’s emotional state is not letting him/her progress in his therapy, then they can formulate ways to treat such patients better. </span>
+In chronic pain rehabilitation, specific movements and postural patterns inform about the emotional conflict experienced by the patients (called “guarding behavior”) which affects their level of ability to relax. If doctors have a way to know that a person’s emotional state is not letting him/her progress in his therapy, then they can formulate ways to treat such patients better. 
 
-<span class="c9">Students lost motivation when high levels of affective states such as frustration, anxiety or fear are experienced. If such systems are developed which can read the body language of all students present in a class, it can point out when the teacher needs to change his/her tactics.</span>
+Students lost motivation when high levels of affective states such as frustration, anxiety or fear are experienced. If such systems are developed which can read the body language of all students present in a class, it can point out when the teacher needs to change his/her tactics.
 
-1.  ### <span>Survey</span>
+### Survey
 
-<span class="c9">The whole point of this research is to answer two questions:</span>
+The whole point of this research is to answer two questions:
 
-1.  <span class="c7">What bodily information is necessary for recognizing the emotional state of a person</span>
-2.  <span class="c7">Whether specific features of the body can be identified which contribute to specific emotions in a person</span>
+1. What bodily information is necessary for recognizing the emotional state of a person
+2.  Whether specific features of the body can be identified which contribute to specific emotions in a person
 
-1.  ## <span class="c38">The Role of Spatial and Temporal Information in Biological Motion Perception.pdf</span>
+1The Role of Spatial and Temporal Information in Biological Motion Perception.pdf
 
-<span class="c9">In the experiment conducted, 9 human walkers were fitted with point-lights on all major joints. There movements, both to the left and right, were recorded. From the movements, 100 static images were extracted based on the following four configurations:</span>
+In the experiment conducted, 9 human walkers were fitted with point-lights on all major joints. There movements, both to the left and right, were recorded. From the movements, 100 static images were extracted based on the following four configurations:
 
-1.  <span class="c7">Normal spatial and temporal </span>
-2.  <span class="c7">Scrambled spatial and normal temporal </span>
-3.  <span class="c7">Normal spatial and scrambled temporal</span>
-4.  <span class="c7">Scrambled spatial and temporal</span>
+1.  Normal spatial and temporal 
+2.  Scrambled spatial and normal temporal 
+3.  Normal spatial and scrambled temporal
+4.  Scrambled spatial and temporal
 
-<span class="c9">The experiment was conducted by both, an algorithm and a human subject in two further stages. Stage 1 analyzed the spatial structure of the frame by matching with some templates of body shapes. Stage 2 analyzed the temporal arrangement. The task was to find the facing direction (form) of the point-light body and movement (motion) direction of the body.</span>
+The experiment was conducted by both, an algorithm and a human subject in two further stages. Stage 1 analyzed the spatial structure of the frame by matching with some templates of body shapes. Stage 2 analyzed the temporal arrangement. The task was to find the facing direction (form) of the point-light body and movement (motion) direction of the body.
 
-<span class="c9">The results show that form can be recognized when temporal data is scrambled and spatial data is intact. But movement cannot be analyzed when either of the data is scrambled. </span>
+The results show that form can be recognized when temporal data is scrambled and spatial data is intact. But movement cannot be analyzed when either of the data is scrambled. 
 
-1.  ## <span class="c38">Evidence for Distinct Contributions of Form and Motion Information to the Recognition of Emotions from Body Gestures.pdf</span>
+## Evidence for Distinct Contributions of Form and Motion Information to the Recognition of Emotions from Body Gestures.pdf
 
-<span class="c9">The research concluded that motion signals alone are sufficient for recognizing basic emotions.</span>
+The research concluded that motion signals alone are sufficient for recognizing basic emotions.
 
-1.  ## <span class="c38">Visual Perception of Expressiveness in Musician's Body Movements.pdf</span>
+## Visual Perception of Expressiveness in Musician's Body Movements.pdf
 
-<span class="c9">Recognizing emotional intentions of a musician by their body movements. The results indicate that:</span>
+Recognizing emotional intentions of a musician by their body movements. The results indicate that:
 
-*   <span class="c7">Happiness, sadness and anger are well communicated but fear was not</span>
-*   <span class="c7">Anger is indicated by large, fairly fast and jerky movement</span>
-*   <span class="c7">Sadness by fluid and slow movements</span>
-*   <span class="c7">But expressions of the same motion varied greatly depending upon the instrument played</span>
+*   Happiness, sadness and anger are well communicated but fear was not
+*   Anger is indicated by large, fairly fast and jerky movement
+*   Sadness by fluid and slow movements
+*   But expressions of the same motion varied greatly depending upon the instrument played
 
-1.  ## <span class="c38">Automated Analysis of Body Movement in Emotionally Expressive Piano Performances.pdf</span>
+## Automated Analysis of Body Movement in Emotionally Expressive Piano Performances.pdf
 
-<span class="c9">While playing piano, movement is related to both the musical score that is being played as well as emotional intention conveyed. In the experiment conducted the pianist was asked to play the same musical score with different emotional intentions. Two motion cues were studied using an automated system:</span>
+While playing piano, movement is related to both the musical score that is being played as well as emotional intention conveyed. In the experiment conducted the pianist was asked to play the same musical score with different emotional intentions. Two motion cues were studied using an automated system:
 
-1.  <span class="c7">Quantity of motion of the upper body</span>
-2.  <span class="c7">Velocity of head movement</span>
+1.  Quantity of motion of the upper body
+2.  Velocity of head movement
 
-<span class="c9">The paper states that a comprehensive account of emotional communication should consider the entire path from sender to receiver. On the sender side, emotions are expressed with appearance and behavior by means of cues which can be objectively measured. On the receiver side, these cues are processed based upon the perception of the receiver. Receiver’s perception can be affected by many things such as culture and his own mood. So, although emotions perceived by the receiver are based on emotions expressed by the sender, but they are not necessarily equal.</span>
+The paper states that a comprehensive account of emotional communication should consider the entire path from sender to receiver. On the sender side, emotions are expressed with appearance and behavior by means of cues which can be objectively measured. On the receiver side, these cues are processed based upon the perception of the receiver. Receiver’s perception can be affected by many things such as culture and his own mood. So, although emotions perceived by the receiver are based on emotions expressed by the sender, but they are not necessarily equal.
 
-<span class="c9">This implies that a comprehensive account of emotion communication requires the conclusion of both expression and perception. </span>
+This implies that a comprehensive account of emotion communication requires the conclusion of both expression and perception. 
 
-<span class="c9">There are some distinctive patterns of movements and postural behavior associated with some of the emotions studied:</span>
+There are some distinctive patterns of movements and postural behavior associated with some of the emotions studied:
 
-1.  <span class="c7">Lifting shoulders seemed to be typical for </span><span class="c9 c13 c12">joy</span><span class="c7"> and </span><span class="c9 c13 c12">anger</span>
-2.  <span class="c7">Moving shoulders forward is typical for </span><span class="c9 c13 c12">disgust</span><span class="c7">, </span><span class="c9 c13 c12">despair</span><span class="c7"> and </span><span class="c9 c12 c13">fear</span>
+1.  Lifting shoulders seemed to be typical for <span class="c9 c13 c12">joy and <span class="c9 c13 c12">anger
+2.  Moving shoulders forward is typical for <span class="c9 c13 c12">disgust, <span class="c9 c13 c12">despair and <span class="c9 c12 c13">fear
 
-<span class="c9">Survey of various research papers concluded that head movement plays an important role in communication, as well as, perception of emotion.</span>
+Survey of various research papers concluded that head movement plays an important role in communication, as well as, perception of emotion.
 
-<span class="c9">For dance performances,</span>
+For dance performances,
 
-1.  <span class="c7">Overall duration of time</span>
-2.  <span class="c7">Contraction index</span>
-3.  <span class="c7">Quantity of motion</span>
-4.  <span class="c7">Motion fluency,</span>
+1.  Overall duration of time
+2.  Contraction index
+3.  Quantity of motion
+4.  Motion fluency,
 
-<span class="c9">showed differences in four emotions: anger, fear, grief and joy. Another research indicated that quantity of motion and contraction index of upper body played a major role in discriminating between different emotions.</span>
+showed differences in four emotions: anger, fear, grief and joy. Another research indicated that quantity of motion and contraction index of upper body played a major role in discriminating between different emotions.
 
-1.  ### <span>Conclusions:</span>
+### Conclusions:
 
-<span class="c9">No other emotion, except for sad had any impact on quantity of motion (but this is because of lack of movement space due to piano)</span>
+No other emotion, except for sad had any impact on quantity of motion (but this is because of lack of movement space due to piano)
 
-<span class="c9">Another research indicates that quantitative analysis of body expressions was also possible. For example, it was concluded that arm was raised 17 degrees higher for angry movements than other emotions and expanded limbs and torso both signify content and joy. </span>
+Another research indicates that quantitative analysis of body expressions was also possible. For example, it was concluded that arm was raised 17 degrees higher for angry movements than other emotions and expanded limbs and torso both signify content and joy. 
 
-1.  ## <span class="c38">Toward a Minimal Representation of Affective Gestures.pdf</span>
+## Toward a Minimal Representation of Affective Gestures.pdf
 
-*   <span class="c7">12 emotions expressed by 10 actors</span>
-*   <span class="c7">Visual tracking of trajectories of head and hands were performed from frontal and lateral view</span>
-*   <span class="c7">Postural and dynamic expressive gesture features were identified and analyzed</span>
+*   12 emotions expressed by 10 actors
+*   Visual tracking of trajectories of head and hands were performed from frontal and lateral view
+*   Postural and dynamic expressive gesture features were identified and analyzed
 
-1.  ### <span>Features tracked:</span>
+### Features tracked:
 
-1.  <span class="c7">Overall amount of motion captured</span>
-2.  <span class="c7">The degree of contraction and expansion of body computed using its bounded regions</span>
-3.  <span class="c7">Motion fluency computed on the bases of the changes magnitude of the overall amount of motion over time </span>
+1.  Overall amount of motion captured
+2.  The degree of contraction and expansion of body computed using its bounded regions
+3.  Motion fluency computed on the bases of the changes magnitude of the overall amount of motion over time 
 
-1.  ### <span>Framework used:</span>
+### Framework Used for Gesture Representation
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 603.61px; height: 206.40px;">![](images/image04.jpg)</span>
+1.  Module 1 computes low-level motion features i.e., the 3D positions and kinematics of head and hands
+2.  Module 2 computes a vector of higher-level expressive gesture features, including the following five sets of features:
 
-<span class="c26 c12">Figure 1: Framework Used for Gesture Representation</span>
+1.  Energy (passive vs. animated)
+2.  Spatial extent (expanded vs. contracted)
+3.  Smoothness and continuity of movement (gradual vs. jerky)
+4.  Forward-backward leaning of the head
+5.  Spatial symmetry and asymmetry of the hands with respect to the horizontal and vertical axis
 
-1.  <span class="c7">Module 1 computes low-level motion features i.e., the 3D positions and kinematics of head and hands</span>
-2.  <span class="c7">Module 2 computes a vector of higher-level expressive gesture features, including the following five sets of features:</span>
+1.  Module 3 reduces the dimensionality of the data, while highlighting the salient patterns in the data set
 
-1.  <span class="c7">Energy (passive vs. animated)</span>
-2.  <span class="c7">Spatial extent (expanded vs. contracted)</span>
-3.  <span class="c7">Smoothness and continuity of movement (gradual vs. jerky)</span>
-4.  <span class="c7">Forward-backward leaning of the head</span>
-5.  <span class="c7">Spatial symmetry and asymmetry of the hands with respect to the horizontal and vertical axis</span>
+The paper also contains the details of how each of the features was computed as well as the Dimension Reduction Model.
 
-1.  <span class="c7">Module 3 reduces the dimensionality of the data, while highlighting the salient patterns in the data set</span>
+Suggest that use of upper body only would be sufficient for classifying a large amount of effective behavior. 
 
-<span class="c9">The paper also contains the details of how each of the features was computed as well as the Dimension Reduction Model.</span>
 
-<span class="c9">Suggest that use of upper body only would be sufficient for classifying a large amount of effective behavior. </span>
+## Kinect 
 
-1.  ### <span>Results:</span>
+This portion of the document describes Kinect hardware and various software frameworks to be used with Kinect. Microsoft has a well-documented Kinect SDK (for windows only) but some third-party SDK’s and drivers, as well as frameworks are also available. I propose that we use OpenNI coupled with NITE (both are explained below) instead of Microsoft’s SDK as they are open source (you need to purchase a license to use Microsoft’s Kinect SDK for commercial purposes) and can be easily ported to Mac and Linux.
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 615.09px; height: 264.47px;">![](images/image05.png)</span>
+### Kinect Sensor Hardware
 
-<span class="c26 c12">Figure 2: Cluster Membership of the 12 Emotion Classes with Each Cell Denoting a Portrayal</span>
+The Kinect sensor includes:
 
-1.  ## <span>Attributing Emotion to Static Body Postures.pdf</span>
+1.  RGB camera
+2.  Depth sensor
+3.  Multi-array microphones
+4.  Tilt motor
+5.  Three-axis accelerometer
 
-<span class="c60 c9">Static body postures were shown to various observers and they categorized various emotions. The result is as follows:</span>
+The Kinect’s depth sensor consists of an infrared light source , a laser that projects a pattern of dots, that are read back by a monochrome CMOS IR sensor. The sensor detects reflected segments of the dot pattern and converts their intensities into distances. The resolution of the depth dimension (z-axis) is about one centimeter while spatial resolution (x- and y-axes) is in millimeters. Each frame generated by the depth sensor is at VGA resolution (640 x 480 pixels), containing 11-bit depth values which provides 2,048 levels of sensitivity. The output stream runs at a frame rate of 30 Hz.
 
-<span class="c26 c12">Table 2: Showing Percentages of Successful Recognition of Static Postures by Observers</span>
+The RGB video stream also utilizes VGA resolution and a 30 Hz frame rate. 
 
-<span style="overflow: hidden; display: inline-block; margin: 14.93px -14.93px; border: 0.00px solid #000000; transform: rotate(1.57rad) translateZ(0px); -webkit-transform: rotate(1.57rad) translateZ(0px); width: 624.02px; height: 594.16px;">![](images/image06.jpg)</span>
+The audio array consists of four microphones, with each channel processing 16-bit audio at a sampling rate of 16 KHz. The hardware includes ambient noise suppression. 
 
-1.  ## <span class="c38">Critical Features for the Perception of Emotion from Gait.pdf</span>
+Microsoft suggests that you allow about 6 feet of empty space between you and the sensor otherwise you can confuse the sensor. 
 
-<span class="c9">Carried out a 3-step process to extract and validate the minimum set of spatial-temporal motor primitives that drive the perception of particular emotions in gait. They showed that perception of emotions is based on specific changes in joint angles amplitudes with respect to the pattern of neutral walk. They also studied the after-effects of emotions and concluded that there were after-affects in perception of sad and happy movements, indicating that the feature sets are complete. </span>
+### Kinect Development Software
 
-1.  ### <span>Conclusion</span>
+There are four main Kinect development libraries:
 
-<span class="c9">Arms straight down, close to the side of the body indicates sadness (but head position also plays an important role, for example, bent forward for disgust and backward for pride). </span>
+1.  OpenKinect’s libfreenect
+2.  CLNUI
+3.  OpenNI
+4.  Microsoft’s Kinect for Windows
 
-<span class="c9">While some emotion categories do share a core set of body expressions, they also exhibit a number of variations for other body parts. For example, happiness and elated joy are indicated by head bent back in some studies. In some studies arms are raised while they remain straight down in Critical Features for the Perception of Emotion from Gait.pdf (which may be due to the contextual factor of gait).</span>
+### OpenKinect’s libfreenect
 
-<span class="c9">More than one body expression pattern may be associated with the same emotion category. So, there are contextual factors which may affect the emotional state’s expression. Components that make up an emotion expressed are not fixed and each emotion reaction is not unique. But, discriminative patterns may emerge when context is not considered. </span>
+Libfreenect is derived from a reverse-engineered Kinect driver and works across all OS platforms. OpenKinect Analysis library communicates with the OpenKinect API and analyzes the raw information into more useful abstractions. They aim to to implement the following features but <span class="c9 c12">most of them have not been implemented yet:
 
-1.  ## <span class="c12 c46">Other Papers</span>
+*   hand tracking
+*   skeleton tracking
+*   other depth processing
+*   3D audio isolation <span class="c1 c13">coning?
+*   audio cancellation (<span class="c1 c13">perhaps a driver feature?)
+*   Point cloud generation
+*   Inertial movement tracking with the built in accelerometer or an attached WiiMote
+*   3d reconstruction
+*   GPU acceleration for any of the above
 
-*   ## <span class="c9 c12">Multimodal Analysis of Expressive Gesture in Music and Dance Performances .pdf</span>
+## CLNUI
 
-*   ## <span class="c9 c12">Gesture Based Affective Computing on Motion Capture Data.pdf</span>
+CLNUI is aimed for windows only but allows multiple kinects to work together. 
 
-*   ## <span class="c9 c12">Estimating the Efficiency of Recognizing Gender and Affect from Biological Motion.pdf</span>
+## OpenNI (Open Natural Interaction)
 
-*   ## <span class="c9 c12"> Detecting Affect from Non-Stylised Body Motions.pdf</span>
+OpenNI is a software framework and an API and provides support for:
 
-*   ## <span class="c9 c12">Exploring Non-Verbal Communication in Human-Machine Interaction.pdf</span>
+1.  Voice and voice command recognition
+2.  Hand gestures
+3.  Body Motion Tracking
 
-*   ## <span class="c9 c12">Automatic Recognition of Affective Body Movement in a Video Game Scenario.pdf</span>
+OpenNI is a multi-language, cross-platform framework that defines API’s for writing applications utilizing Natural Interaction. The main advantage of this framework is that you write software independent of the hardware. So, for example, we can aim to write a Human Motion Analysis program which can analyze human motion using kinect if it is available or the same program would use a camera if Kinect is not available. 
 
-*   ## <span class="c9 c12">Affective Computing.ppt</span>
+Sensor modules that are currently supported are:
 
-*   ## <span class="c9 c12">Visual Informatics - Bridging Research and Practice.pdf </span>
+1.  3D sensor
+2.  RGB camera
+3.  IR camera
+4.  A microphone or an array of microphones
 
-<span class="c9">The above papers show automatic recognition of bodily expressions mono-modally.</span>
+Middleware components that are supported are:
 
-<span class="c9">I studied recognizing emotional states of people playing tennis on Wii. Individual idiosyncrasies were removed by normalizing each expression according to min and max value of the features for that participant. </span>
+1.  Full body analysis middleware: a software component that processes sensory data and generates body related information (typically data structure that describes joints, orientation, center of mass, and so on)
+2.  Hand point analysis middeware: a software component that processes sensory data and generates the location of a hand point
+3.  Gesture detection middleware: a software component that identifies predefined gestures (for example, a waving hand) and alerts the application
+4.  Scene analyzer middleware: a software component that analyzes the image of the scene in order to produce such information as:
 
-<span class="c9">Best results were obtained using angular velocity, angular frequency and amount of movement. Overall the system was able to correctly classify a high percentage of both the high and low-intensity negative expression and the happiness expressions, but considerably fewer of the concentration expressions. </span>
+1.  The seperation between the foreground of the scene and the background
+2.  The coordination of the floor plane
+3.  The individual identification of figures in the scene (and output its current location and orientation of joints of this figure)
 
-<span class="c9">In tennis, some played using their hands and wrists while some with shoulders and arms. In hand/wrists combination, negative emotions may be expressed by jerky and fast movements of the wrists while in latter, with jerky movements of the larger body. </span>
 
-*   <span class="c7">Probabilistic Combination of Multiple Modalities to Detect Interest.pdf</span>
-*   <span class="c7">Multimodal Emotion Recognition from Expressive Faces, Body Gestures and Speech.pdf</span>
-*   <span class="c7">Automatic Temporal Segment Detection and Affect Recognition From Face and Body Display.pdf</span>
-*   <span class="c7">Beyond Facial Expressions.pdf </span>
+## NITE
 
-<span class="c9">The above mentioned papers show automatic recognition multi-modally.</span>
+An important reason for using OpenNI is its support for middleware. The NITE library understands the different hand movements as gesture types based on how hand points change over time. NITE gestures include:
 
-*   <span class="c7">Emotion Recognition from Dance Image Sequences Using Contour Approximation.pdf</span>
-*   <span class="c7">Interactive System Design.pdf</span>
-*   <span class="c7">Extraction of Motion Characteristics Corresponding to Sensitivity Information Using Dance Mvoement.pdf</span>
-*   <span class="c7">Emotional Body Movements.pdf</span>
+1.  Pushing
+2.  Swiping
+3.  Holding steady
+4.  Waving
+5.  Hand circling
 
-<span class="c9">Majority of above mentioned affective recognition systems have focused on dance performances. </span>
+Primesense’s NITE middleware allows computers or digital devices to perceive the world in 3D. NITE comprehends your movements and interactions within its view, translates them into application inputs, and responds to them without any wearable input.” <br/>
 
-<span class="c9">Recognition of fear was most often misclassified as anger. Misclassification of grief and joy is interesting since joy movements are very fluid and grief movements are not. </span>
+Including computer vision algorithms, NITE identifies users and tracks their movements, and provides the framework API for implementing Natural-Interaction UI controls based on gestures. <span class="c9 c12">NITE can detect when you want to control things with only hand gestures, or when to get your whole body involved. <br/>
 
-<span class="c9">These systems are relatively successful but dance movements are generally exaggerated while day-to-day body movements are generally subtle. </span>
+Hand control: allows you to control digital devices with your bare hands and as long as you’re in control, NITE ignores what others are doing. <br/>
 
-<span class="c23 c13 c12">Chapter 3</span>
+Full body control: lets you have a total immersive, full body video game experience. NITE middleware supports multiple users, and is designed for all types of action. <br/>
 
-1.  # <span>Methodology</span>
+## Comparison between Microsoft’s SDK and OpenNI
 
-<span class="c9">Figure 3 describes high level architecture of what the project was intended to accomplish:</span>
+Microsoft’s Kinect SDK covers much the same ground as OpenNI. The low-level API gives access to the depth sensor, image sensor, and microphone array, while higher-level features include skeletal tracking, audio processing, and integration with the Windows speech recognition API.
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 569.33px; height: 233.13px;">![](images/image07.png)</span>
+The main area where SDK wins over OpenNI is audio. Other pluses for Microsoft’s Kinect SDK are its extensive documentation and ease of installation on Windows 7\. The main drawback for Microsoft’s SDK is that it only works for Windows 7, not even Windows XP. The SDK is free but limited to non-commercial purposes.
 
-<span class="c26 c12">Figure 3: Showing the Basic Layout of the Project</span>
+## Setup
 
-1.  ## <span>Kinect </span>
+### OpenNI
 
-<span class="c9">This portion of the document describes Kinect hardware and various software frameworks to be used with Kinect. Microsoft has a well-documented Kinect SDK (for windows only) but some third-party SDK’s and drivers, as well as frameworks are also available. I propose that we use OpenNI coupled with NITE (both are explained below) instead of Microsoft’s SDK as they are open source (you need to purchase a license to use Microsoft’s Kinect SDK for commercial purposes) and can be easily ported to Mac and Linux.</span>
+#### Installing OpenNI and Kinect Driver on Windows 7 (x86) 
 
-1.  ### <span>Kinect Sensor Hardware</span>
+1.  Go to [OpenNI](http://openni.org/Downloads/OpenNIModules.aspx)
 
-<span class="c9">The Kinect sensor includes:</span>
+1.  Select OpenNI Packages
+2.  Select Stable
+3.  Select PrimeSense Package Stable Build for Windows x86 Development Edition
 
-1.  <span class="c7">RGB camera</span>
-2.  <span class="c7">Depth sensor</span>
-3.  <span class="c7">Multi-array microphones</span>
-4.  <span class="c7">Tilt motor</span>
-5.  <span class="c7">Three-axis accelerometer</span>
+1.  While installing, select OpenNI and NITE middleware. DO NOT check PrimeSense hardware as that driver is not for Microsoft Kinect 
+2.  Download Kinect driver from [Kinect](https://github.com/avin2/SensorKinect) (make sure that neither Microsoft’s nor any other driver for Kinect is installed on your computer) and install it.
+3.  To run the samples included with NITE, copy all .xml files from “[PrimeSense root directory]/NITE/Data” to “[PrimeSense root directory]/SensorKinect/Data”
 
-<span class="c9">The Kinect’s depth sensor consists of an infrared light source , a laser that projects a pattern of dots, that are read back by a monochrome CMOS IR sensor. The sensor detects reflected segments of the dot pattern and converts their intensities into distances. The resolution of the depth dimension (z-axis) is about one centimeter while spatial resolution (x- and y-axes) is in millimeters. Each frame generated by the depth sensor is at VGA resolution (640 x 480 pixels), containing 11-bit depth values which provides 2,048 levels of sensitivity. The output stream runs at a frame rate of 30 Hz.</span>
+#### Configuring OpenNI Development in Visual Studio 2010
 
-<span class="c9">The RGB video stream also utilizes VGA resolution and a 30 Hz frame rate. </span>
+1.  Create a new or open an existing Visual Studio 2010 project
+2.  Open project properties
+3.  Go to <span class="c9 c12">C/C++ -> General -> Additional Include Directories and add “[OpenNI root directory]/Include”
+4.  Go to <span class="c9 c12">Linker -> General -> Additional Library Directories and add “[OpenNI root directory]/Lib”
+5.  Go to <span class="c9 c12">Linker -> Input -> Additional Dependencies and add <span class="c9 c12">OpenNI.lib
+6.  Your code should include <span class="c9 c12">XnOpenNI.h if you are using C interface, or <span class="c9 c12">XnCppWrapper.h if you are using C++ interface 
+7.  Optionally, you can use the namespace “xn” or you can reference objects using scope operator (For example, “xn::Context context”)
 
-<span class="c9">The audio array consists of four microphones, with each channel processing 16-bit audio at a sampling rate of 16 KHz. The hardware includes ambient noise suppression. </span>
+#### Configuring OpenNI Development in Visual Studio 2012
 
-<span class="c9">Microsoft suggests that you allow about 6 feet of empty space between you and the sensor otherwise you can confuse the sensor. </span>
+Installation and configuration in Visual Studio 2012 is exactly the same as Visual Studio 2010\. But OpenNI doesn’t let you use their library in compiler version greater than VS 2010\. But it can be overridden using the following steps:
 
-1.  ### <span>Kinect Development Software</span>
+1.  Within the OpenNI libraries directory, locate the file XnPlatform.h
+2.  At the top of the file you will find the code “if defined(_WIN32). Beneath this you will find another condition which checks the compiler version
+3.  Comment out that piece of code and you will be able to compile the project
 
-<span class="c9">There are four main Kinect development libraries:</span>
+#### Configuring OpenNI Development in Java IDE’s
 
-1.  <span class="c7">OpenKinect’s libfreenect</span>
-2.  <span class="c7">CLNUI</span>
-3.  <span class="c7">OpenNI</span>
-4.  <span class="c7">Microsoft’s Kinect for Windows</span>
+1.  Create a new project in Eclipse or Netbeans
+2.  Add “[OpenNI root directory]/Bin/org.OpenNI.jar” and “[NITE root directory]/Bin/com.primesense.NITE.jar” to “additional libraries
 
-1.  ### <span>OpenKinect’s libfreenect</span>
+## Technologies Used:
 
-<span class="c9">Libfreenect is derived from a reverse-engineered Kinect driver and works across all OS platforms. OpenKinect Analysis library communicates with the OpenKinect API and analyzes the raw information into more useful abstractions. They aim to to implement the following features but </span><span class="c9 c12">most of them have not been implemented yet</span><span class="c9">:</span>
+1.  Microsoft Windows 7 (x86)
+2.  PrimeSense’s SensorKinect driver for Kinect
+3.  NITE middleware for OpenNI
+4.  OpenNI
 
-*   <span class="c1">hand tracking</span>
-*   <span class="c1">skeleton tracking</span>
-*   <span class="c1">other depth processing</span>
-*   <span class="c1">3D audio isolation </span><span class="c1 c13">coning?</span>
-*   <span class="c1">audio cancellation (</span><span class="c1 c13">perhaps a driver feature?</span><span class="c1">)</span>
-*   <span class="c1">Point cloud generation</span>
-*   <span class="c1">Inertial movement tracking with the built in accelerometer or an attached WiiMote</span>
-*   <span class="c1">3d reconstruction</span>
-*   <span class="c1">GPU acceleration for any of the above</span>
+# Results
 
-1.  ## <span>CLNUI</span>
+Two major emotions, happiness and anger were taken into consideration. These two emotions were distinguished by only using the upper body data. Music was generated using motion of hands of the user as input. Emotional data was used to normalize the music generated to map it onto a musical scale so that it sounded aesthetically pleasing.
 
-<span class="c9">CLNUI is aimed for windows only but </span><span class="c9 c12">allows multiple kinects</span><span class="c9"> to work together. </span>
+# Discussion
 
-1.  ## <span>OpenNI (Open Natural Interaction)</span>
+Where body language is a crucial part of emotional detection, either by another human or a computer device, it is not complete. Current state of body language largely depends on the context. For example, people playing tennis would depict different emotions differently through body language than people playing piano. This is because in each of the situation, body language will have different constraints and the subject can only show movement in certain directions. 
 
-<span class="c9">OpenNI is a software framework and an API and provides support for:</span>
+Secondly, real-time generation of music according to the emotion, and which also sounds that way to an untrained ear also lacks accuracy.
 
-1.  <span class="c7">Voice and voice command recognition</span>
-2.  <span class="c7">Hand gestures</span>
-3.  <span class="c7">Body Motion Tracking</span>
+# Conclusion
 
-<span class="c9">OpenNI is a multi-language, cross-platform framework that defines API’s for writing applications utilizing Natural Interaction. The main advantage of this framework is that you write software independent of the hardware. So, for example, we can aim to write a Human Motion Analysis program which can analyze human motion using kinect if it is available or the same program would use a camera if Kinect is not available. </span>
+We conclude that body language alone is not sufficient for accurately determining the emotion of a person. But, coupled with facial expression analysis and vocal analysis, these three complete the method in which emotions are perceived by human beings and hence, it does have the potential of increasing the computer-aided emotion detection. 
 
-<span class="c9">Figure 4 shows the three-layered view of the OpenNI concept: </span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 688.51px; height: 358.27px;">![](images/image01.jpg)</span>
+# References
 
-<span class="c26 c12">Figure 4: Three-Layered View of the OpenNI</span>
+[1] <span class="c8 c9">[http://www.affective-sciences.org/gemep](http://www.google.com/url?q=http%3A%2F%2Fwww.affective-sciences.org%2Fgemep&sa=D&sntz=1&usg=AFQjCNEMz4odhreuo05hwNC5KbkwMKtaQA)
 
-<span class="c9">Sensor modules that are currently supported are:</span>
+<span class="c8 c9">[2]<span class="c8 c9">[http://www.openframeworks.cc/download/](http://www.google.com/url?q=http%3A%2F%2Fwww.openframeworks.cc%2Fdownload%2F&sa=D&sntz=1&usg=AFQjCNHJZ9vtsnIAeGprJX3wojcQilQBLg)
 
-1.  <span class="c7">3D sensor</span>
-2.  <span class="c7">RGB camera</span>
-3.  <span class="c7">IR camera</span>
-4.  <span class="c7">A microphone or an array of microphones</span>
-
-<span class="c9">Middleware components that are supported are:</span>
-
-1.  <span class="c7">Full body analysis middleware: a software component that processes sensory data and generates body related information (typically data structure that describes joints, orientation, center of mass, and so on)</span>
-2.  <span class="c7">Hand point analysis middeware: a software component that processes sensory data and generates the location of a hand point</span>
-3.  <span class="c7">Gesture detection middleware: a software component that identifies predefined gestures (for example, a waving hand) and alerts the application</span>
-4.  <span class="c7">Scene analyzer middleware: a software component that analyzes the image of the scene in order to produce such information as:</span>
-
-1.  <span class="c7">The seperation between the foreground of the scene and the background</span>
-2.  <span class="c7">The coordination of the floor plane</span>
-3.  <span class="c7">The individual identification of figures in the scene (and output its current location and orientation of joints of this figure)</span>
-
-<span class="c9">Figure 5 describes an example scenario in which multiple modules are registered to work with an OpenNi installation:</span>
-
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 470.67px;">![](images/image00.jpg)</span>
-
-<span class="c12 c26">Figure 5: Example Scenario with Multiple Modules Registered to Work with an OpenNi Installation</span>
-
-<span class="c9">OpenNI’s Kinect driver is called SensorKinect. </span><span class="c9 c12">One drawback of using OpenNI will be that tilt motor, status light and accelerometer will not be available.</span>
-
-1.  ## <span>NITE</span>
-
-<span class="c9">An important reason for using OpenNI is its support for middleware. The NITE library understands the different hand movements as gesture types based on how hand points change over time. NITE gestures include:</span>
-
-1.  <span class="c7">Pushing</span>
-2.  <span class="c7">Swiping</span>
-3.  <span class="c7">Holding steady</span>
-4.  <span class="c7">Waving</span>
-5.  <span class="c7">Hand circling</span>
-
-<span class="c9">“</span><span class="c9 c13">Primesense’s NITE middleware allows computers or digital devices to perceive the world in 3D. NITE comprehends your movements and interactions within its view, translates them into application inputs, and responds to them without any wearable input</span><span class="c9">.”</span>
-
-<span class="c9">Including computer vision algorithms, NITE identifies users and tracks their movements, and provides the framework API for implementing Natural-Interaction UI controls based on gestures. </span><span class="c9 c12">NITE can detect when you want to control things with only hand gestures, or when to get your whole body involved. </span>
-
-<span class="c9 c12">Hand control</span><span class="c9">: allows you to control digital devices with your bare hands and as long as you’re in control, NITE ignores what others are doing.</span>
-
-<span class="c9 c12">Full body control</span><span class="c9">: lets you have a total immersive, full body video game experience. NITE middleware supports multiple users, and is designed for all types of action.</span>
-
-1.  ## <span>Comparison between Microsoft’s SDK and OpenNI</span>
-
-<span class="c9">Microsoft’s Kinect SDK covers much the same ground as OpenNI. The low-level API gives access to the depth sensor, image sensor, and microphone array, while higher-level features include skeletal tracking, audio processing, and integration with the Windows speech recognition API.</span>
-
-<span class="c9">The main area where SDK wins over OpenNI is audio. Other pluses for Microsoft’s Kinect SDK are its extensive documentation and ease of installation on Windows 7\. The main drawback for Microsoft’s SDK is that it only works for Windows 7, not even Windows XP. The SDK is free but limited to non-commercial purposes.</span>
-
-1.  ## <span>Development Configurations</span>
-
-1.  ### <span>OpenNI</span>
-
-1.  #### <span>Installing OpenNI and Kinect Driver on Windows 7 (x86) </span>
-
-1.  <span class="c9">Go to </span><span class="c8 c9">[http://openni.org/Downloads/OpenNIModules.aspx](http://www.google.com/url?q=http%3A%2F%2Fopenni.org%2FDownloads%2FOpenNIModules.aspx&sa=D&sntz=1&usg=AFQjCNFbLsvOWyCioicKHYSFz9pGDiKLLg)</span>
-
-1.  <span class="c9">Select OpenNI Packages</span>
-2.  <span class="c9">Select Stable</span>
-3.  <span class="c9">Select PrimeSense Package Stable Build for Windows x86 Development Edition</span>
-
-1.  <span class="c9">While installing, select OpenNI and NITE middleware. DO NOT check PrimeSense hardware as that driver is not for Microsoft Kinect </span>
-2.  <span class="c9">Download Kinect driver from </span><span class="c8 c9">[https://github.com/avin2/SensorKinect](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Favin2%2FSensorKinect&sa=D&sntz=1&usg=AFQjCNG0TnaQeP_oAXI2hXKwnXVatZ41lQ)</span><span class="c9"> (make sure that neither Microsoft’s nor any other driver for Kinect is installed on your computer) and install it.</span>
-3.  <span class="c9">To run the samples included with NITE, copy all .xml files from “[PrimeSense root directory]/NITE/Data” to “[PrimeSense root directory]/SensorKinect/Data”</span>
-
-1.  #### <span>Configuring OpenNI Development in Visual Studio 2010</span>
-
-1.  <span class="c7">Create a new or open an existing Visual Studio 2010 project</span>
-2.  <span class="c7">Open project properties</span>
-3.  <span class="c7">Go to </span><span class="c9 c12">C/C++ -> General -> Additional Include Directories</span><span class="c7"> and add “[OpenNI root directory]/Include”</span>
-4.  <span class="c7">Go to </span><span class="c9 c12">Linker -> General -> Additional Library Directories </span><span class="c7">and add “[OpenNI root directory]/Lib”</span>
-5.  <span class="c7">Go to </span><span class="c9 c12">Linker -> Input -> Additional Dependencies </span><span class="c7">and add </span><span class="c9 c12">OpenNI.lib</span>
-6.  <span class="c7">Your code should include </span><span class="c9 c12">XnOpenNI.h</span><span class="c7"> if you are using C interface, or </span><span class="c9 c12">XnCppWrapper.h</span><span class="c7"> if you are using C++ interface </span>
-7.  <span class="c7">Optionally, you can use the namespace “xn” or you can reference objects using scope operator (For example, “xn::Context context”)</span>
-
-1.  #### <span>Configuring OpenNI Development in Visual Studio 2012</span>
-
-<span class="c9">Installation and configuration in Visual Studio 2012 is exactly the same as Visual Studio 2010\. But OpenNI doesn’t let you use their library in compiler version greater than VS 2010\. But it can be overridden using the following steps:</span>
-
-1.  <span class="c7">Within the OpenNI libraries directory, locate the file XnPlatform.h</span>
-2.  <span class="c7">At the top of the file you will find the code “if defined(_WIN32). Beneath this you will find another condition which checks the compiler version</span>
-3.  <span class="c7">Comment out that piece of code and you will be able to compile the project</span>
-
-1.  #### <span>Configuring OpenNI Development in Java IDE’s</span>
-
-1.  <span class="c7">Create a new project in Eclipse or Netbeans</span>
-2.  <span class="c7">Add “[OpenNI root directory]/Bin/org.OpenNI.jar” and “[NITE root directory]/Bin/com.primesense.NITE.jar” to “additional libraries</span>
-
-1.  ## <span>Technologies Used:</span>
-
-1.  <span class="c7">Microsoft Windows 7 (x86)</span>
-2.  <span class="c7">PrimeSense’s SensorKinect driver for Kinect</span>
-3.  <span class="c7">NITE middleware for OpenNI</span>
-4.  <span class="c7">OpenNI</span>
-
-1.  ### <span>Architecture</span>
-
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 194.98px; height: 307.96px;">![](images/image02.png)</span>
-
-<span class="c26 c12">Figure 6: Project Architecture</span>
-
-1.  ### <span>OpenFrameworks</span>
-
-1.  <span class="c7">Download the latest release of OpenFrameworks from </span><span class="c7 c8">[http://www.openframeworks.cc/download/](http://www.google.com/url?q=http%3A%2F%2Fwww.openframeworks.cc%2Fdownload%2F&sa=D&sntz=1&usg=AFQjCNHJZ9vtsnIAeGprJX3wojcQilQBLg)</span>
-2.  <span class="c7">There you go! Run any of the example from the openFrameworks’ directory</span>
-
-<span class="c23 c13 c12">Chapter 4</span>
-
-1.  # <span>Results</span>
-
-<span class="c9">Two major emotions, happiness and anger were taken into consideration. These two emotions were distinguished by only using the upper body data. Music was generated using motion of hands of the user as input. Emotional data was used to normalize the music generated to map it onto a musical scale so that it sounded aesthetically pleasing.</span>
-
-<span class="c23 c13 c12">Chapter 5</span>
-
-1.  # <span>Discussion</span>
-
-<span class="c9">Where body language is a crucial part of emotional detection, either by another human or a computer device, it is not complete. Current state of body language largely depends on the context. For example, people playing tennis would depict different emotions differently through body language than people playing piano. This is because in each of the situation, body language will have different constraints and the subject can only show movement in certain directions. </span>
-
-<span class="c9">Secondly, real-time generation of music according to the emotion, and which also sounds that way to an untrained ear also lacks accuracy.</span>
-
-<span class="c23 c13 c12">Chapter 6</span>
-
-1.  # <span>Conclusion</span>
-
-<span class="c9">We conclude that body language alone is not sufficient for accurately determining the emotion of a person. But, coupled with facial expression analysis and vocal analysis, these three complete the method in which emotions are perceived by human beings and hence, it does have the potential of increasing the computer-aided emotion detection. </span>
-
-<span class="c23 c13 c12">Chapter 7</span>
-
-1.  # <span>References</span>
-
-<span class="c9">[1] </span><span class="c8 c9">[http://www.affective-sciences.org/gemep](http://www.google.com/url?q=http%3A%2F%2Fwww.affective-sciences.org%2Fgemep&sa=D&sntz=1&usg=AFQjCNEMz4odhreuo05hwNC5KbkwMKtaQA)</span>
-
-<span class="c8 c9">[2]</span><span class="c8 c9">[http://www.openframeworks.cc/download/](http://www.google.com/url?q=http%3A%2F%2Fwww.openframeworks.cc%2Fdownload%2F&sa=D&sntz=1&usg=AFQjCNHJZ9vtsnIAeGprJX3wojcQilQBLg)</span>
-
-<span class="c8 c9">[3]</span><span class="c8 c9">[https://github.com/avin2/SensorKinect](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Favin2%2FSensorKinect&sa=D&sntz=1&usg=AFQjCNG0TnaQeP_oAXI2hXKwnXVatZ41lQ)</span>
-
-<div>
-<span class="c13 c12 c35">Human Motion Analysis and Art and Music Generation</span>
-
-</div>
+<span class="c8 c9">[3]<span class="c8 c9">[https://github.com/avin2/SensorKinect](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Favin2%2FSensorKinect&sa=D&sntz=1&usg=AFQjCNG0TnaQeP_oAXI2hXKwnXVatZ41lQ)

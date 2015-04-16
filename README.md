@@ -1,279 +1,68 @@
 # kinect-body-language-analysis
 
-Uses Kinect to study human motion, does emotional analysis and generates music based on user's emotion.
+You can find the code documented over here: [Kinect Body Language Analysis](http://shahqaan.github.io/kinect-body-language-analysis/annotated.html) <br/>
 
-You can find the code documented over here: [Kinect Body Language Analysis](http://shahqaan.github.io/kinect-body-language-analysis/annotated.html)
+Since the release of Kinect, there have been many efforts from Microsoft, as well as, various other open source projects to track human motion. Many frameworks exist which give the developer an abstraction from tracking human movement and instead, provide them with parameters such as hand gestures. We aim to take it a step further. Using such frameworks, we analyzed hand and leg movements, combined with whole body’s motion to get a score of user’s emotions. Using the result of this analysis we developed a framework which other developers can use. While using this framework, they not only have hand and body movement data, but also the emotions of users which they can utilize in their applications. Applications can include creation of music and arts for the sake of advertisement, interactive installations and games which either use emotions as an input event or for studying emotional changes as a reaction to a certain event. <br/>
 
-<span class="c4 c8">[1](#h.tyjcwt)</span><span class="c4 c8">[INTRODUCTION](#h.tyjcwt)</span>
+The second part of the project focuses on developing an application which demonstrates the full potential of this framework. We created a desktop application which will create real-time music and art based on the user performing intentionally or randomly. The music scale and saturation of the colors used is based upon the emotions of the performer.
 
-<span class="c4 c8">[1.1](#h.3dy6vkm)</span><span class="c4 c8">[DEFINING ART AND HUMAN MOTIONS](#h.3dy6vkm)</span>
 
-<span class="c4 c8">[1.2](#h.1t3h5sf)</span><span class="c4 c8">[IMPORTANCE](#h.1t3h5sf)</span>
+# Introduction
 
-<span class="c4 c8">[1.3](#h.2s8eyo1)</span><span class="c4 c8">[PROJECT GOAL](#h.2s8eyo1)</span>
+Human beings are the most complex living organisms. Despite belonging to the mammals group, they are capable of evolving on such a fast scale and are able to redefine the aspects of their life through various means. Over the decades, human motions have shown such diversity that many scientists are trying to analyze and manipulate this knowledge to provide some benefit to the human race. In this regard, there are researches and attempts to read patterns in human motions and to use them to generate something useful such as art. This is a very promising avenue and can open doorways to more research and development.
 
-<span class="c4 c8">[2](#h.17dp8vu)</span><span class="c4 c8">[Literature Review](#h.17dp8vu)</span>
+## Goals
 
-<span class="c4 c8">[2.1](#h.26in1rg)</span><span class="c4 c8">[Human Motion Analysis](#h.26in1rg)</span>
+Goal of this project is to:
 
-<span class="c4 c8">[2.1.1](#h.lnxbz9)</span><span class="c4 c8">[Recognition and Re-synthesis of Human Motion with Personalized Variations](#h.lnxbz9)</span>
+1. Develop a framework that gathers mood and motion data. It means that our module will:
+   1. Capture human motion
+   2. Carry out emotional analysis on motion
+   3. And present the results in a well-formed, consistent manner so that it’s a breeze to use the module
 
-<span class="c4 c8">[2.1.2](#h.35nkun2)</span><span class="c4 c8">[3D Human Action Recognition and Style Transformation Using Resilient Back propagation Neural Networks](#h.35nkun2)</span>
+2. Write a demo application that shows full potential of this framework
 
-<span class="c4 c8">[2.1.3](#h.1ksv4uv)</span><span class="c4 c8">[Conclusion](#h.1ksv4uv)</span>
+# Literature Review
 
-<span class="c4 c8">[2.2](#h.44sinio)</span><span class="c4 c8">[Color Detection and Optimization](#h.44sinio)</span>
+## Human Motion Analysis
 
-<span class="c4 c8">[2.2.1](#h.2jxsxqh)</span><span class="c4 c8">[Aesthetic Coloring for Complex Layout Using Genetic Algorithm](#h.2jxsxqh)</span>
+### Recognition and Re-synthesis of Human Motion with Personalized Variations
 
-<span class="c4 c8">[2.2.2](#h.z337ya)</span><span class="c4 c8">[Conclusion](#h.z337ya)</span>
+The purpose of this research paper was to analyze and recognize various human motions such as walking, jumping etc. It uses Hidden Markov Model recognize motion. This method was successful at recognizing different motions from a scene as well recognizing gender and mood of the actor with 100% accuracy.<br/>
 
-<span class="c4 c8">[2.3](#h.3j2qqm3)</span><span class="c4 c8">[Psychological Analysis of Human Motion](#h.3j2qqm3)</span>
+In this research paper human motion data was gathered by infrared sensors placed at strategic locations on a human body but I chose to not write the details of the data gathering process as we are using Kinect and we will already have human motion data in the form of joints.<br/>
 
-<span class="c4 c8">[2.3.1](#h.1y810tw)</span><span class="c4 c8">[Affective States](#h.1y810tw)</span>
+This paper also addressed the problem of transforming one type of motion into another. They used two different approaches to implement this and both were successful in transforming a male walk into a female walk.
 
-<span class="c4 c8">[2.3.2](#h.4i7ojhp)</span><span class="c4 c8">[Difference between Emotion and Mood](#h.4i7ojhp)</span>
+### 3D Human Action Recognition and Style Transformation Using Resilient Back propagation Neural Networks
 
-<span class="c4 c8">[2.3.3](#h.2xcytpi)</span><span class="c4 c8">[Arousal, Valence and Stance](#h.2xcytpi)</span>
+This paper was published by the same authors as above but it uses Resilient Back propagation Neural Networks instead of Hidden Markov Model to implement the same principles as above.
 
-<span class="c4 c8">[2.3.4](#h.1ci93xb)</span><span class="c4 c8">[Gesture](#h.1ci93xb)</span>
+### Conclusion
 
-<span class="c4 c8">[2.3.5](#h.3whwml4)</span><span class="c4 c8">[GEMEP](#h.3whwml4)</span>
+I have read, at a very abstract level both HMM and neural networks but both are fairly complex so a comparison at this time is not possible. I think we can decide on the algorithm to be used in the implementation phase after we know the exact form in which we have the data that is to be analyzed. <br/>
 
-<span class="c4 c8">[2.3.6](#h.2bn6wsx)</span><span class="c4 c8">[Importance of Body Language Analysis](#h.2bn6wsx)</span>
+As far as re-synthesis is concerned, I don’t think we need re-synthesis as mentioned in both of these research papers. We are to create totally different form of artifacts from our motion analysis but gathering mood and gender can come in very handy. <br/>
 
-<span class="c4 c8">[2.3.7](#h.qsh70q)</span><span class="c4 c8">[Survey](#h.qsh70q)</span>
+## Color Detection and Optimization
 
-<span class="c4 c8">[2.4](#h.3as4poj)</span><span class="c4 c8">[The Role of Spatial and Temporal Information in Biological Motion Perception.pdf](#h.3as4poj)</span>
+### Aethetic Coloring for Complex Layout Using Genetic Algorithm
 
-<span class="c4 c8">[2.5](#h.1pxezwc)</span><span class="c4 c8">[Evidence for Distinct Contributions of Form and Motion Information to the Recognition of Emotions from Body Gestures.pdf](#h.1pxezwc)</span>
+Various research papers focused on generating a final color palette which an artist uses to choose a color from. But this paper solved the problem of generating an optimized color scheme based on a certain input colors. This paper relies on Moon (G.D. Birkhoff. Aesthetic Measure. Harvard University Press, Cambridge, MA, USA, 1933) and Spencer (P. Moo n, D.E. Spencer. Aesthetic measure applied to color harmony. Journal of the Optical Society of America, vol. 34, Apr. 1944, pp. 234-242.) color harmony model which is based on psychological experiments. They argue that Genetic Algorithms the best method to solve this kind of problem. <br/>
 
-<span class="c4 c8">[2.6](#h.49x2ik5)</span><span class="c4 c8">[Visual Perception of Expressiveness in Musician's Body Movements.pdf](#h.49x2ik5)</span>
+In 1928, Birkhoff formalized the notion of beauty by the introduction of the aesthetic measure, defined as the ratio between order and complexity. Based on this measure Moon and Spencer proposed a quantitative model of color harmony, using color difference and area factor based on psychological factors. <br/>
 
-<span class="c4 c8">[2.7](#h.2p2csry)</span><span class="c4 c8">[Automated Analysis of Body Movement in Emotionally Expressive Piano Performances.pdf](#h.2p2csry)</span>
+Implementation is carried out using three phases. In the first phase image they read and evaluate the color image and initialize genetic algorithm parameters. The program reads the size of image, number of color and color pairs and area of each color (read in pixels). Genetic algorithm parameters for this phase include string size, number of generations, population size, mutation and crossover rate. <br/>
 
-<span class="c4 c8">[2.7.1](#h.147n2zr)</span><span class="c4 c8">[Conclusions:](#h.147n2zr)</span>
+In the second phase evaluation of the aesthetic score for each possible solution takes place. This determines the possibility of survival and reproduction of each solution in the following generations. <br/>
 
-<span class="c4 c8">[2.8](#h.3o7alnk)</span><span class="c4 c8">[Toward a Minimal Representation of Affective Gestures.pdf](#h.3o7alnk)</span>
+Phase 3 is population generation. For each generation, three ages of population (parent, child and combined) are created. The best solutions in this combined population regardless of their origin are retained and passed to the following generation as a parent population. <br/>
 
-<span class="c4 c8">[2.8.1](#h.23ckvvd)</span><span class="c4 c8">[Features tracked:](#h.23ckvvd)</span>
+In the experiment conducted, it took them 55 seconds to read an image and search for 6 unique optimized solutions. 
 
-<span class="c4 c8">[2.8.2](#h.ihv636)</span><span class="c4 c8">[Framework used:](#h.ihv636)</span>
+### Conclusion
 
-<span class="c4 c8">[2.8.3](#h.1hmsyys)</span><span class="c4 c8">[Results:](#h.1hmsyys)</span>
-
-<span class="c4 c8">[2.9](#h.2grqrue)</span><span class="c4 c8">[Attributing Emotion to Static Body Postures.pdf](#h.2grqrue)</span>
-
-<span class="c4 c8">[2.10](#h.3fwokq0)</span><span class="c4 c8">[Critical Features for the Perception of Emotion from Gait.pdf](#h.3fwokq0)</span>
-
-<span class="c4 c8">[2.10.1](#h.1v1yuxt)</span><span class="c4 c8">[Conclusion](#h.1v1yuxt)</span>
-
-<span class="c4 c8">[2.11](#h.4f1mdlm)</span><span class="c4 c8">[Other Papers](#h.4f1mdlm)</span>
-
-<span class="c4 c8">[3](#h.2lwamvv)</span><span class="c4 c8">[Methodology](#h.2lwamvv)</span>
-
-<span class="c4 c8">[3.1](#h.3l18frh)</span><span class="c4 c8">[Kinect](#h.3l18frh)</span>
-
-<span class="c4 c8">[3.1.1](#h.206ipza)</span><span class="c4 c8">[Kinect Sensor Hardware](#h.206ipza)</span>
-
-<span class="c4 c8">[3.1.2](#h.4k668n3)</span><span class="c4 c8">[Kinect Development Software](#h.4k668n3)</span>
-
-<span class="c4 c8">[3.1.3](#h.2zbgiuw)</span><span class="c4 c8">[OpenKinect’s libfreenect](#h.2zbgiuw)</span>
-
-<span class="c4 c8">[3.2](#h.1egqt2p)</span><span class="c4 c8">[CLNUI](#h.1egqt2p)</span>
-
-<span class="c4 c8">[3.3](#h.3ygebqi)</span><span class="c4 c8">[OpenNI (Open Natural Interaction)](#h.3ygebqi)</span>
-
-<span class="c4 c8">[3.4](#h.3cqmetx)</span><span class="c4 c8">[NITE](#h.3cqmetx)</span>
-
-<span class="c4 c8">[3.5](#h.1rvwp1q)</span><span class="c4 c8">[Comparison between Microsoft’s SDK and OpenNI](#h.1rvwp1q)</span>
-
-<span class="c4 c8">[3.6](#h.4bvk7pj)</span><span class="c4 c8">[Development Configurations](#h.4bvk7pj)</span>
-
-<span class="c4 c8">[3.6.1](#h.2r0uhxc)</span><span class="c4 c8">[OpenNI](#h.2r0uhxc)</span>
-
-<span class="c4 c8">[3.7](#h.1664s55)</span><span class="c4 c8">[Technologies Used:](#h.1664s55)</span>
-
-<span class="c4 c8">[3.7.1](#h.3q5sasy)</span><span class="c4 c8">[Architecture](#h.3q5sasy)</span>
-
-<span class="c4 c8">[3.7.2](#h.34g0dwd)</span><span class="c4 c8">[OpenFrameworks](#h.34g0dwd)</span>
-
-<span class="c4 c8">[4](#h.1jlao46)</span><span class="c4 c8">[Results](#h.1jlao46)</span>
-
-<span class="c4 c8">[5](#h.43ky6rz)</span><span class="c4 c8">[Discussion](#h.43ky6rz)</span>
-
-<span class="c4 c8">[6](#h.2iq8gzs)</span><span class="c4 c8">[Conclusion](#h.2iq8gzs)</span>
-
-<span class="c4 c8">7</span><span class="c4 c8">Recommendations</span>
-
-<span class="c4 c8">[8](#h.xvir7l)</span><span class="c4 c8">[References](#h.xvir7l)</span>
-
-<span class="c23 c12">LIST OF FIGURES</span>
-
-<span class="c4 c8">[Figure 1: Framework Used for Gesture Representation](#h.32hioqz)</span>
-
-<span class="c4 c8">[Figure 2: Cluster Membership of the 12 Emotion Classes with Each Cell Denoting a Portrayal](#h.41mghml)</span>
-
-<span class="c4 c8">[Figure 3: Showing the Basic Layout of the Project](#h.111kx3o)</span>
-
-<span class="c4 c8">[Figure 4: Three-Layered View of the OpenNI](#h.2dlolyb)</span>
-
-<span class="c4 c8">[Figure 5: Example Scenario with Multiple Modules Registered to Work with an OpenNi Installation](#h.sqyw64)</span>
-
-<span class="c4 c8">[Figure 6: Project Architecture](#h.kgcv8k)</span>
-
-<span class="c23 c12">LIST OF TABLES</span>
-
-<span class="c4 c8">[Table 1: Applications of Human Motion Analysis](#h.4d34og8)</span>
-
-<span class="c4 c8">[Table 2: Showing Percentages of Successful Recognition of Static Postures by Observers](#h.vx1227)</span>
-
-<span class="c23 c12">ABSTRACT</span>
-
-<span class="c9">Since the release of Kinect, there have been many efforts from Microsoft, as well as, various other open source projects to track human motion. Many frameworks exist which give the developer an abstraction from tracking human movement and instead, provide them with parameters such as hand gestures. We aim to take it a step further. Using such frameworks, we analyzed hand and leg movements, combined with whole body’s motion to get a score of user’s emotions. Using the result of this analysis we developed a framework which other developers can use. While using this framework, they not only have hand and body movement data, but also the emotions of users which they can utilize in their applications. Applications can include creation of music and arts for the sake of advertisement, interactive installations and games which either use emotions as an input event or for studying emotional changes as a reaction to a certain event. </span>
-
-<span class="c9">The second part of the project focuses on developing an application which demonstrates the full potential of this framework. We created a desktop application which will create real-time music and art based on the user performing intentionally or randomly. The music scale and saturation of the colors used is based upon the emotions of the performer.</span>
-
-<span class="c23 c13 c12">Chapter 1</span>
-
-1.  # <span>INTRODUCTION</span>
-
-<span class="c9">Human beings are the most complex living organisms. Despite belonging to the mammals group, they are capable of evolving on such a fast scale and are able to redefine the aspects of their life through various means. Over the decades, human motions have shown such diversity that many scientists are trying to analyze and manipulate this knowledge to provide some benefit to the human race. In this regard, there are researches and attempts to read patterns in human motions and to use them to generate something useful such as art. This is a very promising avenue and can open doorways to more research and development. </span>
-
-1.  ## <span>DEFINING ART AND HUMAN MOTIONS</span>
-
-<span class="c9">Art is defined as the expression or application of human creative skill and imagination. Art combined with human motions can be described and can be taken in various meanings such as people dancing or an artifact depicting human motion.</span>
-
-1.  ## <span>IMPORTANCE</span>
-
-<span class="c9">The application of human motion analysis and utilization are vast. Some of the applications of such development can be seen as follows:</span>
-
-<span class="c26 c12">Table 1: Applications of Human Motion Analysis</span>
-
-<table cellpadding="0" cellspacing="0" class="c66"><tbody><tr class="c55"><td class="c86" colspan="1" rowspan="1">
-<span class="c43 c12">Subject & environment</span>
-
-<span class="c43 c12">Monitored</span>
-
-</td><td class="c67" colspan="1" rowspan="1">
-<span class="c43 c12">Parameters calculated</span>
-
-</td><td class="c67" colspan="1" rowspan="1">
-<span class="c12 c43">Output</span>
-
-</td><td class="c87" colspan="1" rowspan="1">
-<span class="c43 c12">Analysis/Application Domain</span>
-
-</td></tr><tr class="c55"><td class="c74" colspan="1" rowspan="1">
-<span class="c47 c40">Person performing intentionally.</span>
-
-</td><td class="c34" colspan="1" rowspan="1">
-*   <span class="c39 c40">Hands, arms, legs and body movement.</span>
-*   <span class="c39 c40">Mood and gender.</span>
-
-</td><td class="c34" colspan="1" rowspan="1">
-<span class="c47 c40">Animation and music generated and color calculated .</span>
-
-</td><td class="c78" colspan="1" rowspan="1">
-<span class="c47 c40">Fun sake, dance performance, advertisement, gaming, one minute competition...what else?</span>
-
-</td></tr><tr class="c55"><td class="c65" colspan="1" rowspan="1">
-<span class="c47 c40">Person performing intentionally or randomly.</span>
-
-</td><td class="c58" colspan="1" rowspan="1">
-*   <span class="c39 c40">Hands, arms, legs and body movement.</span>
-*   <span class="c39 c40">Mood and gender</span>
-
-</td><td class="c58" colspan="1" rowspan="1">
-<span class="c47 c40">Pre-generated 3D scene, such as wind, rain, movement of fish and blooming of flowers controlled by input parameters.</span>
-
-</td><td class="c63" colspan="1" rowspan="1">
-*   <span class="c39 c40">Used as installment in events, festivals, hotels’ lobby and museum.</span>
-*   <span class="c39 c40">Uploading videos on social networking sites.</span>
-
-</td></tr><tr class="c55"><td class="c82" colspan="1" rowspan="1">
-<span class="c47 c40">Person agrees to be monitored at workplace and/or home.</span>
-
-</td><td class="c10" colspan="1" rowspan="1">
-*   <span class="c39 c40">Hands, arms, legs and body movement.</span>
-*   <span class="c39 c40">Mood and gender</span>
-
-</td><td class="c10" colspan="1" rowspan="1">
-<span class="c47 c40">An animation or picture generated.</span>
-
-</td><td class="c45" colspan="1" rowspan="1">
-<span class="c47 c40">Animation and picture can be uploaded to social networking websites. Or we can make a Facebook page where people upload such videos/photos and people rate each of them.</span>
-
-</td></tr><tr class="c55"><td class="c65" colspan="1" rowspan="1">
-<span class="c47 c40">A group of people or even other objects moving in a specific area such as outside a building or at traffic signal.</span>
-
-</td><td class="c58" colspan="1" rowspan="1">
-<span class="c47 c40">Analyze movement of herds of objects?</span>
-
-</td><td class="c58" colspan="1" rowspan="1">
-<span class="c40 c47">An animation or picture.</span>
-
-</td><td class="c63" colspan="1" rowspan="1">
-<span class="c47 c40">Such a system can be installed outside a building which projects (maybe we can use projection mapping as well) movement of people inside/outside that biulding.</span>
-
-</td></tr></tbody></table>
-1.  ## <span>PROJECT GOAL</span>
-
-<span class="c9">The goal of the project was to:</span>
-
-1.  <span class="c9">Develop a framework that gathers mood and motion data. It means that our module will:</span>
-
-*   <span class="c7">Capture human motion</span>
-*   <span class="c7">Carry out mood/emotional analysis on it</span>
-*   <span class="c7">And present the results in a well-formed, consistent manner so that it’s a breeze to use the module</span>
-
-1.  <span class="c9">Write a demo application that shows full potential of this framework</span>
-
-<span class="c23 c13 c12">Chapter 2</span>
-
-1.  # <span>Literature Review</span>
-
-# <span class="c38 c54"> Before starting to jump directly into developing this system, there was a need to see what had already been developed in the fields related to human motion analysis. In this regard, following papers were read and some conclusions were drawn depending on them:</span>
-
-1.  ## <span>Human Motion Analysis</span>
-
-1.  ### <span>Recognition and Re-synthesis of Human Motion with Personalized Variations</span>
-
-<span class="c9">The purpose of this research paper was to analyze and recognize various human motions such as walking, jumping etc. It uses Hidden Markov Model recognize motion. This method was successful at recognizing different motions from a scene as well recognizing gender and mood of the actor with 100% accuracy.</span>
-
-<span class="c9">In this research paper human motion data was gathered by infrared sensors placed at strategic locations on a human body but I chose to not write the details of the data gathering process as we are using Kinect and we will already have human motion data in the form of joints. </span>
-
-<span class="c9">This paper also addressed the problem of transforming one type of motion into another. They used two different approaches to implement this and both were successful in transforming a male walk into a female walk.</span>
-
-1.  ### <span>3D Human Action Recognition and Style Transformation Using Resilient Back propagation Neural Networks</span>
-
-<span class="c9">This paper was published by the same authors as above but it uses Resilient Back propagation Neural Networks instead of Hidden Markov Model to implement the same principles as above. </span>
-
-1.  ### <span>Conclusion</span>
-
-<span class="c9">I have read, at a very abstract level both HMM and neural networks but both are fairly complex so a comparison at this time is not possible. I think we can decide on the algorithm to be used in the implementation phase after we know the exact form in which we have the data that is to be analyzed.</span>
-
-<span class="c9">As far as re-synthesis is concerned, I don’t think we need re-synthesis as mentioned in both of these research papers. We are to create totally different form of artifacts from our motion analysis but gathering mood and gender can come in very handy.</span>
-
-1.  ## <span>Color Detection and Optimization</span>
-
-1.  ### <span>Aesthetic Coloring for Complex Layout Using Genetic Algorithm</span>
-
-<span class="c9">Various research papers focused on generating a final color palette which an artist uses to choose a color from. But this paper solved the problem of generating an optimized color scheme based on a certain input colors. This paper relies on Moon (G.D. Birkhoff. Aesthetic Measure. Harvard University Press, Cambridge, MA, USA, 1933) and Spencer (P. Moo n, D.E. Spencer. Aesthetic measure applied to color harmony. Journal of the Optical Society of America, vol. 34, Apr. 1944, pp. 234-242.) color harmony model which is based on psychological experiments. They argue that Genetic Algorithms the best method to solve this kind of problem. </span>
-
-<span class="c9">In 1928, Birkhoff formalized the notion of beauty by the introduction of the aesthetic measure, defined as the ratio between order and complexity. Based on this measure Moon and Spencer proposed a quantitative model of color harmony, using color difference and area factor based on psychological factors. </span>
-
-<span class="c9">Implementation is carried out using three phases. In the first phase image they read and evaluate the color image and initialize genetic algorithm parameters. The program reads the size of image, number of color and color pairs and area of each color (read in pixels). Genetic algorithm parameters for this phase include string size, number of generations, population size, mutation and crossover rate. </span>
-
-<span class="c9">In the second phase evaluation of the aesthetic score for each possible solution takes place. This determines the possibility of survival and reproduction of each solution in the following generations. </span>
-
-<span class="c9">Phase 3 is population generation. For each generation, three ages of population (parent, child and combined) are created. The best solutions in this combined population regardless of their origin are retained and passed to the following generation as a parent population. </span>
-
-<span class="c9">In the experiment conducted, it took them 55 seconds to read an image and search for 6 unique optimized solutions. </span>
-
-1.  ### <span>Conclusion</span>
-
-<span class="c9">There are also basic rules available to create color combinations. For example, if we hard code a certain color palette into out program and round-off each color read in the frame to one of those found in the color palette. This can be easily done in real time. While the solution mentioned in the research paper above is optimum, I think we are going to have a problem implementing that solution in real time. </span>
+There are also basic rules available to create color combinations. For example, if we hard code a certain color palette into out program and round-off each color read in the frame to one of those found in the color palette. This can be easily done in real time. While the solution mentioned in the research paper above is optimum, I think we are going to have a problem implementing that solution in real time. <br/>
 
 1.  ## <span>Psychological Analysis of Human Motion</span>
 
